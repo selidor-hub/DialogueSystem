@@ -1,0 +1,5913 @@
+{
+  "dzień powszedni": {
+    "text": "dzień powszedni",
+    "client_declaration": {
+      "time": {
+        "or": [
+          {
+            "weekday": 1
+          },
+          {
+            "weekday": 2
+          },
+          {
+            "weekday": 3
+          },
+          {
+            "weekday": 4
+          },
+          {
+            "weekday": 5
+          }
+        ]
+      }
+    }
+  },
+  "Warszawa Targówek lub Bródno": {
+    "text": "Warszawa Targówek lub Bródno",
+    "and": [
+      {
+        "client_declaration": {
+          "location": {
+            "with": [
+              {
+                "quarter": "Warszawa"
+              },
+              {
+                "town": "Warszawa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "with": [
+          {
+            "or": [
+              {
+                "client_declaration": {
+                  "location": {
+                    "quarter": "Bródno"
+                  }
+                }
+              },
+              {
+                "client_declaration": {
+                  "location": {
+                    "quarter": "Targówek"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "or": [
+              {
+                "client_declaration": {
+                  "location": {
+                    "quarter": "Bródno"
+                  }
+                }
+              },
+              {
+                "client_declaration": {
+                  "location": {
+                    "town": "Targówka"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "rok 2019": {
+    "text": "rok 2019",
+    "client_declaration": {
+      "time": {
+        "year": 2019
+      }
+    }
+  },
+  "Regulacja brwi": {
+    "text": "Regulacja brwi",
+    "client_declaration": {
+      "patient": {
+        "part": "brew"
+      },
+      "service": {
+        "name": "regulacja"
+      }
+    }
+  },
+  "za późno": {
+    "text": "za późno",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "w następnym tygodniu": {
+    "text": "w następnym tygodniu",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "Strzyżenie damskie": {
+    "text": "Strzyżenie damskie",
+    "client_declaration": {
+      "service": {
+        "param": "damski",
+        "name": "strzyc"
+      }
+    }
+  },
+  "2.05": {
+    "text": "2.05",
+    "client_declaration": {
+      "time": {
+        "with": [
+          {
+            "hour": {
+              "with": [
+                14,
+                2
+              ]
+            },
+            "minute": 5
+          },
+          {
+            "monthday": 2,
+            "month": 5
+          }
+        ]
+      }
+    }
+  },
+  "weekend": {
+    "text": "weekend",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "weekday": 7
+        },
+        "begin": {
+          "weekday": 6
+        }
+      }
+    }
+  },
+  "hybryda": {
+    "text": "hybryda",
+    "client_declaration": {
+      "service": {
+        "name": "hybryda"
+      }
+    }
+  },
+  "Potrzebuję umówić się jutro na wizytę do weterynarza": {
+    "text": "Potrzebuję umówić się jutro na wizytę do weterynarza",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "doer": {
+        "profession": "weterynarz"
+      },
+      "service": {
+        "name": "wizyta"
+      },
+      "time": {
+        "element": "day",
+        "index": 1,
+        "set": "future"
+      },
+      "action": {
+        "name": "umówić",
+        "attitude": "potrzebować"
+      }
+    }
+  },
+  "blisko godziny 20": {
+    "text": "blisko godziny 20",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "w trzeci poniedziałek lutego ": {
+    "text": "w trzeci poniedziałek lutego ",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "index": 3,
+        "set": {
+          "month": 2
+        }
+      }
+    }
+  },
+  "dnia 2 maja": {
+    "text": "dnia 2 maja",
+    "client_declaration": {
+      "time": {
+        "monthday": 2,
+        "month": 5
+      }
+    }
+  },
+  "jasne": {
+    "text": "jasne",
+    "client_declaration": {
+      "action": {
+        "attitude": "jasne"
+      }
+    }
+  },
+  "Prostowanie włosów": {
+    "text": "Prostowanie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "prostować"
+      }
+    }
+  },
+  "o godzinie 8:01": {
+    "text": "o godzinie 8:01",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": {
+            "with": [
+              20,
+              8
+            ]
+          },
+          "minute": 1
+        }
+      }
+    }
+  },
+  "godzina zerowa": {
+    "text": "godzina zerowa",
+    "client_declaration": {
+      "time": {
+        "hour": 0
+      }
+    }
+  },
+  "Piercing języka": {
+    "text": "Piercing języka",
+    "client_declaration": {
+      "patient": {
+        "part": "język"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "Baleyage": {
+    "text": "Baleyage",
+    "client_declaration": {
+      "service": {
+        "name": "baleyage"
+      }
+    }
+  },
+  "po południu ": {
+    "text": "po południu ",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    }
+  },
+  "później": {
+    "text": "później",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "w piątek trzynastego": {
+    "text": "w piątek trzynastego",
+    "client_declaration": {
+      "time": {
+        "monthday": 13,
+        "weekday": 5
+      }
+    }
+  },
+  "najwcześniej w środę": {
+    "text": "najwcześniej w środę",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "weekday": 3
+        }
+      }
+    }
+  },
+  "Zabiegi na stopy": {
+    "text": "Zabiegi na stopy",
+    "client_declaration": {
+      "patient": {
+        "part": "stopa"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "rano": {
+    "text": "rano",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "morning"
+      }
+    }
+  },
+  "Keratynowe prostowanie włosów": {
+    "text": "Keratynowe prostowanie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "param": "keratynowy",
+        "name": "prostować"
+      }
+    }
+  },
+  "w 2020 roku": {
+    "text": "w 2020 roku",
+    "client_declaration": {
+      "time": {
+        "year": 2020
+      }
+    }
+  },
+  "przed 2.05": {
+    "text": "przed 2.05",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "with": [
+            {
+              "hour": {
+                "with": [
+                  14,
+                  2
+                ]
+              },
+              "minute": 5
+            },
+            {
+              "monthday": 2,
+              "month": 5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Falamboyage": {
+    "text": "Falamboyage",
+    "client_declaration": {
+      "service": {
+        "name": "falamboyage"
+      }
+    }
+  },
+  "jutro": {
+    "text": "jutro",
+    "client_declaration": {
+      "time": {
+        "element": "day",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "strzyżenie dla córki": {
+    "text": "strzyżenie dla córki",
+    "client_declaration": {
+      "patient": {
+        "person": "córka"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "Piercing nosa": {
+    "text": "Piercing nosa",
+    "client_declaration": {
+      "patient": {
+        "part": "nos"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "jeszcze 21 listopada": {
+    "text": "jeszcze 21 listopada",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "monthday": 21,
+            "month": 11
+          },
+          "mod": "jeszcze"
+        }
+      }
+    }
+  },
+  "wszystkie piątki": {
+    "text": "wszystkie piątki",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "element": {
+              "weekday": 5
+            },
+            "set": "future"
+          },
+          "mod": "wszystek"
+        }
+      }
+    }
+  },
+  "w centrum Warszawy": {
+    "text": "w centrum Warszawy",
+    "client_declaration": {
+      "location": {
+        "center": {
+          "with": [
+            {
+              "quarter": "Warszawa"
+            },
+            {
+              "town": "Warszawa"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "o 8:00, 11:30 lub 22:05": {
+    "text": "o 8:00, 11:30 lub 22:05",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "or": [
+            {
+              "hour": 22,
+              "minute": 5
+            },
+            {
+              "hour": {
+                "with": [
+                  11,
+                  23
+                ]
+              },
+              "minute": 30
+            },
+            {
+              "hour": {
+                "with": [
+                  20,
+                  8
+                ]
+              },
+              "minute": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "za wcześnie": {
+    "text": "za wcześnie",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "we wtorek": {
+    "text": "we wtorek",
+    "client_declaration": {
+      "time": {
+        "weekday": 2
+      }
+    }
+  },
+  "jak najpóźniejsza godzina": {
+    "text": "jak najpóźniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "sort": "descending"
+        }
+      }
+    }
+  },
+  "drożej": {
+    "text": "drożej",
+    "client_declaration": {
+      "price": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "teraz": {
+    "text": "teraz",
+    "client_declaration": {
+      "time": {
+        "element": "minute",
+        "index": 0,
+        "set": "future"
+      }
+    }
+  },
+  "poniżej 10zł": {
+    "text": "poniżej 10zł",
+    "client_declaration": {
+      "price": {
+        "end": 10
+      }
+    }
+  },
+  "Regulacja brwi pęsetą": {
+    "text": "Regulacja brwi pęsetą",
+    "client_declaration": {
+      "patient": {
+        "part": "brew"
+      },
+      "service": {
+        "param": "pęseta",
+        "name": "regulacja"
+      }
+    }
+  },
+  "jak najwcześniejszy termin": {
+    "text": "jak najwcześniejszy termin",
+    "client_declaration": {
+      "time": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "przy Żurawiej": {
+    "text": "przy Żurawiej",
+    "client_declaration": {
+      "location": {
+        "street_name": "Żurawia"
+      }
+    }
+  },
+  "około godziny 20": {
+    "text": "około godziny 20",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "wtorek, 4 lipca 10:00": {
+    "text": "wtorek, 4 lipca 10:00",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "with": [
+            10,
+            22
+          ]
+        },
+        "minute": 0,
+        "weekday": 2,
+        "month": 7,
+        "monthday": 4
+      }
+    }
+  },
+  "dowolny weekend": {
+    "text": "dowolny weekend",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "end": {
+              "weekday": 7
+            },
+            "begin": {
+              "weekday": 6
+            }
+          },
+          "mod": "dowolny"
+        }
+      }
+    }
+  },
+  "za drogo": {
+    "text": "za drogo",
+    "client_declaration": {
+      "price": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "najwcześniej o 18": {
+    "text": "najwcześniej o 18",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "at": {
+            "hour": 18
+          }
+        }
+      }
+    }
+  },
+  "Regeneracja włosów": {
+    "text": "Regeneracja włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "regeneracja"
+      }
+    }
+  },
+  "Tatuaż mały": {
+    "text": "Tatuaż mały",
+    "client_declaration": {
+      "service": {
+        "param": "mały",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "od 17": {
+    "text": "od 17",
+    "client_declaration": {
+      "with": [
+        {
+          "price": {
+            "begin": 17
+          }
+        },
+        {
+          "rating": {
+            "begin": 17
+          }
+        },
+        {
+          "time": {
+            "begin": {
+              "with": [
+                {
+                  "hour": 17
+                },
+                {
+                  "monthday": 17
+                },
+                {
+                  "year": 17
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "chciałbym obciąć włosy": {
+    "text": "chciałbym obciąć włosy",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "obciąć"
+      },
+      "action": {
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "godzina 14:00-16:00": {
+    "text": "godzina 14:00-16:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Przedłużanie rzęs": {
+    "text": "Przedłużanie rzęs",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "name": "przedłużać"
+      }
+    }
+  },
+  "Henna brwi": {
+    "text": "Henna brwi",
+    "client_declaration": {
+      "patient": {
+        "part": "brew"
+      },
+      "service": {
+        "name": "henna"
+      }
+    }
+  },
+  "godzina 12 minut 26": {
+    "text": "godzina 12 minut 26",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "with": [
+            0,
+            12
+          ]
+        },
+        "minute": 26
+      }
+    }
+  },
+  "o 17": {
+    "text": "o 17",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": 17
+        }
+      }
+    }
+  },
+  "w godzinach przedpołudniowych": {
+    "text": "w godzinach przedpołudniowych",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "before_noon"
+      }
+    }
+  },
+  "chętnie o 18": {
+    "text": "chętnie o 18",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "at": {
+              "hour": 18
+            }
+          },
+          "mod": "chętnie"
+        }
+      }
+    }
+  },
+  "nieco wcześniej": {
+    "text": "nieco wcześniej",
+    "client_declaration": {
+      "time": {
+        "distance": {
+          "arg": {
+            "before": {
+              "previous": "proposal"
+            }
+          },
+          "mod": "nieco"
+        }
+      }
+    }
+  },
+  "Między poniedziałkiem a piątkiem między 12 a 13": {
+    "text": "Między poniedziałkiem a piątkiem między 12 a 13",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "weekday": 1
+            }
+          },
+          {
+            "end": {
+              "and": [
+                {
+                  "weekday": 5
+                },
+                {
+                  "with": [
+                    {
+                      "and": [
+                        {
+                          "begin": {
+                            "hour": {
+                              "with": [
+                                0,
+                                12
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "end": {
+                            "hour": 13
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "begin": {
+                            "monthday": 12
+                          }
+                        },
+                        {
+                          "end": {
+                            "monthday": 13
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "begin": {
+                            "year": 12
+                          }
+                        },
+                        {
+                          "end": {
+                            "year": 13
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "wcześniej niż we wtorek": {
+    "text": "wcześniej niż we wtorek",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "weekday": 2
+        }
+      }
+    }
+  },
+  "zabiegi na stopy": {
+    "text": "zabiegi na stopy",
+    "client_declaration": {
+      "patient": {
+        "part": "stopa"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "rankiem": {
+    "text": "rankiem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "morning"
+      }
+    }
+  },
+  "Tatuaż kolorowy": {
+    "text": "Tatuaż kolorowy",
+    "client_declaration": {
+      "service": {
+        "param": "kolorowy",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "późnym popołudniem": {
+    "text": "późnym popołudniem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon",
+        "time_of_day_mod": "late"
+      }
+    }
+  },
+  "Dekoloryzacja": {
+    "text": "Dekoloryzacja",
+    "client_declaration": {
+      "service": {
+        "name": "dekoloryzacja"
+      }
+    }
+  },
+  "zbyt wcześnie": {
+    "text": "zbyt wcześnie",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "Strzyżenie męskie długie": {
+    "text": "Strzyżenie męskie długie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "długi",
+            "męski"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "za tydzień": {
+    "text": "za tydzień",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "o 11:30 lub 22:05": {
+    "text": "o 11:30 lub 22:05",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "or": [
+            {
+              "hour": 22,
+              "minute": 5
+            },
+            {
+              "hour": {
+                "with": [
+                  11,
+                  23
+                ]
+              },
+              "minute": 30
+            }
+          ]
+        }
+      }
+    }
+  },
+  "14:00-16:00": {
+    "text": "14:00-16:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "dwudziestego trzeciego": {
+    "text": "dwudziestego trzeciego",
+    "client_declaration": {
+      "time": {
+        "monthday": 23
+      }
+    }
+  },
+  "żaden piątek": {
+    "text": "żaden piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "żaden"
+        }
+      }
+    }
+  },
+  "Tatuaż duży": {
+    "text": "Tatuaż duży",
+    "client_declaration": {
+      "service": {
+        "param": "duży",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "Manicure japoński": {
+    "text": "Manicure japoński",
+    "client_declaration": {
+      "service": {
+        "param": "japoński",
+        "name": "manicure"
+      }
+    }
+  },
+  "za jedną godzinę": {
+    "text": "za jedną godzinę",
+    "client_declaration": {
+      "time": {
+        "element": "hour",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "Makijaż": {
+    "text": "Makijaż",
+    "client_declaration": {
+      "service": {
+        "name": "makijaż"
+      }
+    }
+  },
+  "jednak 28 grudnia": {
+    "text": "jednak 28 grudnia",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "monthday": 28,
+            "month": 12
+          },
+          "mod": "jednak"
+        }
+      }
+    }
+  },
+  "taniej niż 80zł": {
+    "text": "taniej niż 80zł",
+    "client_declaration": {
+      "price": {
+        "before": 80
+      }
+    }
+  },
+  "Tatuaż średni": {
+    "text": "Tatuaż średni",
+    "client_declaration": {
+      "service": {
+        "param": "średni",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "później niż o 9:00": {
+    "text": "później niż o 9:00",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "at": {
+            "hour": {
+              "with": [
+                21,
+                9
+              ]
+            },
+            "minute": 0
+          }
+        }
+      }
+    }
+  },
+  "Masaż twarzy": {
+    "text": "Masaż twarzy",
+    "client_declaration": {
+      "patient": {
+        "part": "twarz"
+      },
+      "service": {
+        "name": "masaż"
+      }
+    }
+  },
+  "Strzyżenie damskie średnie": {
+    "text": "Strzyżenie damskie średnie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "damski",
+            "średni"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "jak najszybciej w godzinach popołudniowych": {
+    "text": "jak najszybciej w godzinach popołudniowych",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "sort": "ascending"
+          },
+          {
+            "time_of_day": "afternoon"
+          }
+        ]
+      }
+    }
+  },
+  "Strzyżenie brody": {
+    "text": "Strzyżenie brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "za wysoka cena": {
+    "text": "za wysoka cena",
+    "client_declaration": {
+      "price": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "o północy ": {
+    "text": "o północy ",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    }
+  },
+  "dowolny miesiąc": {
+    "text": "dowolny miesiąc",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": "month",
+          "mod": "dowolny"
+        }
+      }
+    }
+  },
+  "w środę, 17 maja  o 12:00": {
+    "text": "w środę, 17 maja  o 12:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "at": {
+              "hour": {
+                "with": [
+                  0,
+                  12
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "monthday": 17,
+            "month": 5
+          },
+          {
+            "weekday": 3
+          }
+        ]
+      }
+    }
+  },
+  "Tatuaż tymczasowy": {
+    "text": "Tatuaż tymczasowy",
+    "client_declaration": {
+      "service": {
+        "param": "tymczasowy",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "nad ranem": {
+    "text": "nad ranem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "pre_morning"
+      }
+    }
+  },
+  "5.3.2018 roku": {
+    "text": "5.3.2018 roku",
+    "client_declaration": {
+      "time": {
+        "monthday": 5,
+        "month": 3,
+        "year": 2018
+      }
+    }
+  },
+  "Trymowanie brody": {
+    "text": "Trymowanie brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "name": "trymować"
+      }
+    }
+  },
+  "najwcześniej jutro": {
+    "text": "najwcześniej jutro",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "element": "day",
+          "index": 1,
+          "set": "future"
+        }
+      }
+    }
+  },
+  "tylko po godzinie 18": {
+    "text": "tylko po godzinie 18",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "after": {
+              "hour": 18
+            }
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "w okolicach godziny 11.00": {
+    "text": "w okolicach godziny 11.00",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": {
+            "with": [
+              11,
+              23
+            ]
+          },
+          "minute": 0
+        }
+      }
+    }
+  },
+  "zagęszczanie rzęs": {
+    "text": "zagęszczanie rzęs",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "name": "zagęszczać"
+      }
+    }
+  },
+  "Trwała headlines": {
+    "text": "Trwała headlines",
+    "client_declaration": {
+      "service": {
+        "name": "trwała headlines"
+      }
+    }
+  },
+  "środa": {
+    "text": "środa",
+    "client_declaration": {
+      "time": {
+        "weekday": 3
+      }
+    }
+  },
+  "wieczorem ": {
+    "text": "wieczorem ",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "evening"
+      }
+    }
+  },
+  "późnym wieczorem": {
+    "text": "późnym wieczorem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "evening",
+        "time_of_day_mod": "late"
+      }
+    }
+  },
+  "niestety nie": {
+    "text": "niestety nie",
+    "client_declaration": {
+      "action": {
+        "attitude": "niestety nie"
+      }
+    }
+  },
+  "Modelowanie brody": {
+    "text": "Modelowanie brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "name": "modelować"
+      }
+    }
+  },
+  "najwcześniej do 18": {
+    "text": "najwcześniej do 18",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "end": {
+            "with": [
+              {
+                "hour": 18
+              },
+              {
+                "monthday": 18
+              },
+              {
+                "year": 18
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "około 14:00-16:00": {
+    "text": "około 14:00-16:00",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "and": [
+            {
+              "begin": {
+                "hour": 14,
+                "minute": 0
+              }
+            },
+            {
+              "end": {
+                "hour": 16,
+                "minute": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Depilacja laserowa": {
+    "text": "Depilacja laserowa",
+    "client_declaration": {
+      "service": {
+        "param": "laserowy",
+        "name": "depilacja"
+      }
+    }
+  },
+  "Regulacja brwi woskiem": {
+    "text": "Regulacja brwi woskiem",
+    "client_declaration": {
+      "patient": {
+        "part": "brew"
+      },
+      "service": {
+        "param": "wosk",
+        "name": "regulacja"
+      }
+    }
+  },
+  "piątek, 2 czerwca": {
+    "text": "piątek, 2 czerwca",
+    "client_declaration": {
+      "time": {
+        "monthday": 2,
+        "weekday": 5,
+        "month": 6
+      }
+    }
+  },
+  "tylko w Warszawie": {
+    "text": "tylko w Warszawie",
+    "client_declaration": {
+      "location": {
+        "flexibility": {
+          "arg": {
+            "with": [
+              {
+                "quarter": "Warszawa"
+              },
+              {
+                "town": "Warszawa"
+              }
+            ]
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "dzień dwudziesty": {
+    "text": "dzień dwudziesty",
+    "client_declaration": {
+      "time": {
+        "monthday": 20
+      }
+    }
+  },
+  "5.3.2018": {
+    "text": "5.3.2018",
+    "client_declaration": {
+      "time": {
+        "monthday": 5,
+        "month": 3,
+        "year": 2018
+      }
+    }
+  },
+  "po godzinie 16:00 i nie o godzinie 16:00": {
+    "text": "po godzinie 16:00 i nie o godzinie 16:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "not": {
+              "at": {
+                "hour": 16,
+                "minute": 0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "później niż o 15:00, dowolny dzień": {
+    "text": "później niż o 15:00, dowolny dzień",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "at": {
+                "hour": 15,
+                "minute": 0
+              }
+            }
+          },
+          {
+            "flexibility": {
+              "arg": "day",
+              "mod": "dowolny"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "zabiegi dla stóp": {
+    "text": "zabiegi dla stóp",
+    "client_declaration": {
+      "patient": {
+        "part": "stopa"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "Strzyżenie męskie": {
+    "text": "Strzyżenie męskie",
+    "client_declaration": {
+      "service": {
+        "param": "męski",
+        "name": "strzyc"
+      }
+    }
+  },
+  "Depilacja woskiem bezpaskowym": {
+    "text": "Depilacja woskiem bezpaskowym",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "bezpaskowy",
+            "wosk"
+          ]
+        },
+        "name": "depilacja"
+      }
+    }
+  },
+  "nieco po osiemnastej": {
+    "text": "nieco po osiemnastej",
+    "client_declaration": {
+      "time": {
+        "distance": {
+          "arg": {
+            "after": {
+              "hour": 18
+            }
+          },
+          "mod": "nieco"
+        }
+      }
+    }
+  },
+  "Strzyżenie damskie długie": {
+    "text": "Strzyżenie damskie długie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "damski",
+            "długi"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "Strzyżenie damskie krótkie": {
+    "text": "Strzyżenie damskie krótkie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "damski",
+            "krótki"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "Strzyżenie dziewczynki": {
+    "text": "Strzyżenie dziewczynki",
+    "client_declaration": {
+      "patient": {
+        "person": "dziewczynka"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "między południem a północą": {
+    "text": "między południem a północą",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 12,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "następny tydzień": {
+    "text": "następny tydzień",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "chciałbym umówić się w czwartek lub piątek": {
+    "text": "chciałbym umówić się w czwartek lub piątek",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "time": {
+        "or": [
+          {
+            "weekday": 4
+          },
+          {
+            "weekday": 5
+          }
+        ]
+      },
+      "action": {
+        "name": "umówić",
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "w poniedziałki": {
+    "text": "w poniedziałki",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "set": "future"
+      }
+    }
+  },
+  "Zabiegi na twarz ": {
+    "text": "Zabiegi na twarz ",
+    "client_declaration": {
+      "patient": {
+        "part": "twarz"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "dnia 30 maja 2017 roku o godzinie 20": {
+    "text": "dnia 30 maja 2017 roku o godzinie 20",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "at": {
+              "hour": 20
+            }
+          },
+          {
+            "monthday": 30,
+            "month": 5,
+            "year": 2017
+          }
+        ]
+      }
+    }
+  },
+  "Strzyżenie dzieci": {
+    "text": "Strzyżenie dzieci",
+    "client_declaration": {
+      "patient": {
+        "person": "dziecko"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "jak najwyższe oceny": {
+    "text": "jak najwyższe oceny",
+    "client_declaration": {
+      "rating": {
+        "sort": "descending"
+      }
+    }
+  },
+  "dnia 1 września": {
+    "text": "dnia 1 września",
+    "client_declaration": {
+      "time": {
+        "monthday": 1,
+        "month": 9
+      }
+    }
+  },
+  "za dwa tygodnie": {
+    "text": "za dwa tygodnie",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 2,
+        "set": "future"
+      }
+    }
+  },
+  "dnia 20 listopada 2017 roku o 8 rano": {
+    "text": "dnia 20 listopada 2017 roku o 8 rano",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "at": {
+              "hour": {
+                "with": [
+                  20,
+                  8
+                ]
+              }
+            }
+          },
+          {
+            "monthday": 20,
+            "month": 11,
+            "year": 2017
+          },
+          {
+            "time_of_day": "morning"
+          }
+        ]
+      }
+    }
+  },
+  "od godziny 20": {
+    "text": "od godziny 20",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "Solarium": {
+    "text": "Solarium",
+    "client_declaration": {
+      "service": {
+        "name": "solarium"
+      }
+    }
+  },
+  "chciałbym umówić papugę do dentysty na formatowanie brzytwą pępka": {
+    "text": "chciałbym umówić papugę do dentysty na formatowanie brzytwą pępka",
+    "client_declaration": {
+      "patient": {
+        "part": "pępek",
+        "animal": "papuga"
+      },
+      "doer": {
+        "profession": "dentysta"
+      },
+      "service": {
+        "param": "brzytwa",
+        "name": "formatować"
+      },
+      "action": {
+        "name": "umówić",
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "nie o godzinie 16:00": {
+    "text": "nie o godzinie 16:00",
+    "client_declaration": {
+      "time": {
+        "not": {
+          "at": {
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      }
+    }
+  },
+  "poniedziałki lutego": {
+    "text": "poniedziałki lutego",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "set": {
+          "month": 2
+        }
+      }
+    }
+  },
+  "dzień dziewiętnasty": {
+    "text": "dzień dziewiętnasty",
+    "client_declaration": {
+      "time": {
+        "monthday": 19
+      }
+    }
+  },
+  "listopad 2020": {
+    "text": "listopad 2020",
+    "client_declaration": {
+      "time": {
+        "month": 11,
+        "year": 2020
+      }
+    }
+  },
+  "w godzinach od 12:00 do 20:00": {
+    "text": "w godzinach od 12:00 do 20:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": {
+                "with": [
+                  0,
+                  12
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ranek": {
+    "text": "ranek",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "morning"
+      }
+    }
+  },
+  "za piętnaście minut": {
+    "text": "za piętnaście minut",
+    "client_declaration": {
+      "time": {
+        "element": "minute",
+        "index": 15,
+        "set": "future"
+      }
+    }
+  },
+  "o 6:32": {
+    "text": "o 6:32",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": {
+            "with": [
+              18,
+              6
+            ]
+          },
+          "minute": 32
+        }
+      }
+    }
+  },
+  "tylko piątek": {
+    "text": "tylko piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "wcześniej niż o 18": {
+    "text": "wcześniej niż o 18",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "at": {
+            "hour": 18
+          }
+        }
+      }
+    }
+  },
+  "od trzech godzin": {
+    "text": "od trzech godzin",
+    "client_declaration": {
+      "time": {
+        "element": "hour",
+        "index": 3,
+        "set": "past"
+      }
+    }
+  },
+  "trochę później": {
+    "text": "trochę później",
+    "client_declaration": {
+      "time": {
+        "distance": {
+          "arg": {
+            "after": {
+              "previous": "proposal"
+            }
+          },
+          "mod": "trochę"
+        }
+      }
+    }
+  },
+  "przed południem ": {
+    "text": "przed południem ",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    }
+  },
+  "nie w poniedziałek": {
+    "text": "nie w poniedziałek",
+    "client_declaration": {
+      "time": {
+        "not": {
+          "weekday": 1
+        }
+      }
+    }
+  },
+  "w piątki dnia 13": {
+    "text": "w piątki dnia 13",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": {
+              "weekday": 5
+            },
+            "set": "future"
+          },
+          {
+            "monthday": 13
+          }
+        ]
+      }
+    }
+  },
+  "w godzinach 18:00-20:00": {
+    "text": "w godzinach 18:00-20:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Masaż kosmetyczny": {
+    "text": "Masaż kosmetyczny",
+    "client_declaration": {
+      "service": {
+        "param": "kosmetyczny",
+        "name": "masaż"
+      }
+    }
+  },
+  "w miniony poniedziałek": {
+    "text": "w miniony poniedziałek",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "index": 1,
+        "set": "past"
+      }
+    }
+  },
+  "SPA": {
+    "text": "SPA",
+    "client_declaration": {
+      "service": {
+        "name": "SPA"
+      }
+    }
+  },
+  "Stylizacja brody": {
+    "text": "Stylizacja brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "name": "stylizacja"
+      }
+    }
+  },
+  "dziś nie między 15:00 a 17:00": {
+    "text": "dziś nie między 15:00 a 17:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 0,
+            "set": "future"
+          },
+          {
+            "not": {
+              "and": [
+                {
+                  "begin": {
+                    "hour": 15,
+                    "minute": 0
+                  }
+                },
+                {
+                  "end": {
+                    "hour": 17,
+                    "minute": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Strzyżenie dziewczynki długie": {
+    "text": "Strzyżenie dziewczynki długie",
+    "client_declaration": {
+      "patient": {
+        "person": "dziewczynka"
+      },
+      "service": {
+        "param": "długi",
+        "name": "strzyc"
+      }
+    }
+  },
+  "58PLN": {
+    "text": "58PLN",
+    "client_declaration": {
+      "price": 58
+    }
+  },
+  "Masaż kręgosłupa": {
+    "text": "Masaż kręgosłupa",
+    "client_declaration": {
+      "patient": {
+        "part": "kręgosłup"
+      },
+      "service": {
+        "name": "masaż"
+      }
+    }
+  },
+  "Tatuaż": {
+    "text": "Tatuaż",
+    "client_declaration": {
+      "service": {
+        "name": "tatuaż"
+      }
+    }
+  },
+  "dwudziesta": {
+    "text": "dwudziesta",
+    "client_declaration": {
+      "time": {
+        "hour": 20
+      }
+    }
+  },
+  "oprócz godzin od 15 do 17": {
+    "text": "oprócz godzin od 15 do 17",
+    "client_declaration": {
+      "time": {
+        "not": {
+          "and": [
+            {
+              "begin": {
+                "hour": 15
+              }
+            },
+            {
+              "end": {
+                "hour": 17
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Najpóźniej o 18": {
+    "text": "Najpóźniej o 18",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "at": {
+            "hour": 18
+          }
+        }
+      }
+    }
+  },
+  "oki": {
+    "text": "oki",
+    "client_declaration": {
+      "action": {
+        "attitude": "oki"
+      }
+    }
+  },
+  "jak najtaniej": {
+    "text": "jak najtaniej",
+    "client_declaration": {
+      "price": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "taniej": {
+    "text": "taniej",
+    "client_declaration": {
+      "price": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "Od 11.05 do 17.05": {
+    "text": "Od 11.05 do 17.05",
+    "client_declaration": {
+      "and": [
+        {
+          "with": [
+            {
+              "price": {
+                "begin": 11.05
+              }
+            },
+            {
+              "rating": {
+                "begin": 11.05
+              }
+            },
+            {
+              "time": {
+                "begin": {
+                  "with": [
+                    {
+                      "hour": {
+                        "with": [
+                          11,
+                          23
+                        ]
+                      },
+                      "minute": 5
+                    },
+                    {
+                      "monthday": 11,
+                      "month": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "with": [
+            {
+              "price": {
+                "end": 17.05
+              }
+            },
+            {
+              "rating": {
+                "end": 17.05
+              }
+            },
+            {
+              "time": {
+                "end": {
+                  "with": [
+                    {
+                      "hour": 17,
+                      "minute": 5
+                    },
+                    {
+                      "monthday": 17,
+                      "month": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pierwszy poniedziałek miesiąca": {
+    "text": "pierwszy poniedziałek miesiąca",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "index": 1,
+        "set": "month"
+      }
+    }
+  },
+  "Zagęszczanie włosów": {
+    "text": "Zagęszczanie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "zagęszczać"
+      }
+    }
+  },
+  "jeszcze w 2017 roku": {
+    "text": "jeszcze w 2017 roku",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "year": 2017
+          },
+          "mod": "jeszcze"
+        }
+      }
+    }
+  },
+  "Modelowanie włosów długich ": {
+    "text": "Modelowanie włosów długich ",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "param": "długi",
+        "name": "modelować"
+      }
+    }
+  },
+  "najchętniej nieco wcześniej": {
+    "text": "najchętniej nieco wcześniej",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "distance": {
+              "arg": {
+                "before": {
+                  "previous": "proposal"
+                }
+              },
+              "mod": "nieco"
+            }
+          },
+          "mod": "najchętniej"
+        }
+      }
+    }
+  },
+  "Zdejmowanie rzęs": {
+    "text": "Zdejmowanie rzęs",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "name": "zdejmować"
+      }
+    }
+  },
+  "w tym tygodniu": {
+    "text": "w tym tygodniu",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 0,
+        "set": "future"
+      }
+    }
+  },
+  "wczesnym popołudniem": {
+    "text": "wczesnym popołudniem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon",
+        "time_of_day_mod": "early"
+      }
+    }
+  },
+  "Ombre": {
+    "text": "Ombre",
+    "client_declaration": {
+      "service": {
+        "name": "ombre"
+      }
+    }
+  },
+  "Makijaż dzienny": {
+    "text": "Makijaż dzienny",
+    "client_declaration": {
+      "service": {
+        "param": "dzienny",
+        "name": "makijaż"
+      }
+    }
+  },
+  "Pasemka": {
+    "text": "Pasemka",
+    "client_declaration": {
+      "service": {
+        "name": "pasemko"
+      }
+    }
+  },
+  "od 18:00 do 20:00": {
+    "text": "od 18:00 do 20:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "jak najszybciej": {
+    "text": "jak najszybciej",
+    "client_declaration": {
+      "time": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "Konsultacja": {
+    "text": "Konsultacja",
+    "client_declaration": {
+      "service": {
+        "name": "konsultacja"
+      }
+    }
+  },
+  "Depilacja": {
+    "text": "Depilacja",
+    "client_declaration": {
+      "service": {
+        "name": "depilacja"
+      }
+    }
+  },
+  "koło godziny 20": {
+    "text": "koło godziny 20",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "Podcięcie końcówek ": {
+    "text": "Podcięcie końcówek ",
+    "client_declaration": {
+      "patient": {
+        "part": "końcówka"
+      },
+      "service": {
+        "name": "podciąć"
+      }
+    }
+  },
+  "na Nowym Świecie": {
+    "text": "na Nowym Świecie",
+    "client_declaration": {
+      "location": {
+        "street_name": "Nowy Świat"
+      }
+    }
+  },
+  "jutro po godzinie 8": {
+    "text": "jutro po godzinie 8",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": {
+                "with": [
+                  20,
+                  8
+                ]
+              }
+            }
+          },
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          }
+        ]
+      }
+    }
+  },
+  "Masaż leczniczy": {
+    "text": "Masaż leczniczy",
+    "client_declaration": {
+      "service": {
+        "param": "leczniczy",
+        "name": "masaż"
+      }
+    }
+  },
+  "wcześniej": {
+    "text": "wcześniej",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "Koloryzacja": {
+    "text": "Koloryzacja",
+    "client_declaration": {
+      "service": {
+        "name": "koloryzacja"
+      }
+    }
+  },
+  "za dwie godziny": {
+    "text": "za dwie godziny",
+    "client_declaration": {
+      "time": {
+        "element": "hour",
+        "index": 2,
+        "set": "future"
+      }
+    }
+  },
+  "dziś jak najwcześniej": {
+    "text": "dziś jak najwcześniej",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 0,
+            "set": "future"
+          },
+          {
+            "sort": "ascending"
+          }
+        ]
+      }
+    }
+  },
+  "Modelowanie włosów średnich": {
+    "text": "Modelowanie włosów średnich",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "param": "średni",
+        "name": "modelować"
+      }
+    }
+  },
+  "za godzinę": {
+    "text": "za godzinę",
+    "client_declaration": {
+      "time": {
+        "element": "hour",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "dnia 30 maja 2017 o godzinie 20": {
+    "text": "dnia 30 maja 2017 o godzinie 20",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "at": {
+              "hour": 20
+            }
+          },
+          {
+            "monthday": 30,
+            "month": 5,
+            "year": 2017
+          }
+        ]
+      }
+    }
+  },
+  "Trwała": {
+    "text": "Trwała",
+    "client_declaration": {
+      "service": {
+        "name": "trwała"
+      }
+    }
+  },
+  "Potrzebuję umówić się jak najszybciej na wizytę do weterynarza, chciałbym zarezerwować. Jutro.": {
+    "text": "Potrzebuję umówić się jak najszybciej na wizytę do weterynarza, chciałbym zarezerwować. Jutro.",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "doer": {
+        "profession": "weterynarz"
+      },
+      "service": {
+        "name": "wizyta"
+      },
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          },
+          {
+            "sort": "ascending"
+          }
+        ]
+      },
+      "action": {
+        "name": {
+          "and": [
+            "umówić",
+            "zarezerwować"
+          ]
+        },
+        "attitude": {
+          "and": [
+            "chcieć",
+            "potrzebować"
+          ]
+        }
+      }
+    }
+  },
+  "Zabiegi na ciało": {
+    "text": "Zabiegi na ciało",
+    "client_declaration": {
+      "patient": {
+        "part": "ciało"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "czwartek lub piątek popołudniu": {
+    "text": "czwartek lub piątek popołudniu",
+    "or": [
+      {
+        "client_declaration": {
+          "time": {
+            "time_of_day": "afternoon",
+            "weekday": 5
+          }
+        }
+      },
+      {
+        "client_declaration": {
+          "time": {
+            "weekday": 4
+          }
+        }
+      }
+    ]
+  },
+  "nieco za wcześnie": {
+    "text": "nieco za wcześnie",
+    "client_declaration": {
+      "time": {
+        "distance": {
+          "arg": {
+            "after": {
+              "previous": "proposal"
+            }
+          },
+          "mod": "nieco"
+        }
+      }
+    }
+  },
+  "Zabiegi na dłonie": {
+    "text": "Zabiegi na dłonie",
+    "client_declaration": {
+      "patient": {
+        "part": "dłoń"
+      },
+      "service": {
+        "name": "zabieg"
+      }
+    }
+  },
+  "tylko wcześniejsza godzina": {
+    "text": "tylko wcześniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "hour": {
+              "before": {
+                "previous": "proposal"
+              }
+            }
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "Olaplex": {
+    "text": "Olaplex",
+    "client_declaration": {
+      "service": {
+        "name": "olaplex"
+      }
+    }
+  },
+  "Modelowanie włosów krótkich": {
+    "text": "Modelowanie włosów krótkich",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "param": "krótki",
+        "name": "modelować"
+      }
+    }
+  },
+  "Jeszcze przed piątkiem": {
+    "text": "Jeszcze przed piątkiem",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "before": {
+              "weekday": 5
+            }
+          },
+          "mod": "jeszcze"
+        }
+      }
+    }
+  },
+  "jutro po godzinie 16:00 i nie o godzinie 16:00": {
+    "text": "jutro po godzinie 16:00 i nie o godzinie 16:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          },
+          {
+            "not": {
+              "at": {
+                "hour": 16,
+                "minute": 0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "tylko wcześniejsze godziny": {
+    "text": "tylko wcześniejsze godziny",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "hour": {
+              "before": {
+                "previous": "proposal"
+              }
+            }
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "jutro nad ranem": {
+    "text": "jutro nad ranem",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          },
+          {
+            "time_of_day": "pre_morning"
+          }
+        ]
+      }
+    }
+  },
+  "tylko Warszawa": {
+    "text": "tylko Warszawa",
+    "client_declaration": {
+      "location": {
+        "flexibility": {
+          "with": [
+            {
+              "arg": {
+                "quarter": "Warszawa"
+              },
+              "mod": "tylko"
+            },
+            {
+              "arg": {
+                "town": "Warszawa"
+              },
+              "mod": "tylko"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "jeszcze dzisiaj": {
+    "text": "jeszcze dzisiaj",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "element": "day",
+            "index": 0,
+            "set": "future"
+          },
+          "mod": "jeszcze"
+        }
+      }
+    }
+  },
+  "Tatuaż czarny": {
+    "text": "Tatuaż czarny",
+    "client_declaration": {
+      "service": {
+        "param": "czarny",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "tylko godzina 18": {
+    "text": "tylko godzina 18",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "hour": 18
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "dzień trzydziesty pierwszy": {
+    "text": "dzień trzydziesty pierwszy",
+    "client_declaration": {
+      "time": {
+        "monthday": 31
+      }
+    }
+  },
+  "jutro po 11:00": {
+    "text": "jutro po 11:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": {
+                "with": [
+                  11,
+                  23
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          }
+        ]
+      }
+    }
+  },
+  "od godziny 18 do godziny 20": {
+    "text": "od godziny 18 do godziny 20",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 18
+            }
+          },
+          {
+            "end": {
+              "hour": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "dziś 23:00": {
+    "text": "dziś 23:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 0,
+            "set": "future"
+          },
+          {
+            "hour": 23,
+            "minute": 0
+          }
+        ]
+      }
+    }
+  },
+  "Modelowanie włosów": {
+    "text": "Modelowanie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "modelować"
+      }
+    }
+  },
+  "od 50 do maksymalnie 150 zł": {
+    "text": "od 50 do maksymalnie 150 zł",
+    "client_declaration": {
+      "and": [
+        {
+          "price": {
+            "end": {
+              "end": 150
+            }
+          }
+        },
+        {
+          "with": [
+            {
+              "price": {
+                "begin": 50
+              }
+            },
+            {
+              "rating": {
+                "begin": 50
+              }
+            },
+            {
+              "time": {
+                "begin": {
+                  "year": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "W weekend, jak najpóźniejsza godzina": {
+    "text": "W weekend, jak najpóźniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "end": {
+              "weekday": 7
+            },
+            "begin": {
+              "weekday": 6
+            }
+          },
+          {
+            "hour": {
+              "sort": "descending"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "w nadchodzącym miesiącu": {
+    "text": "w nadchodzącym miesiącu",
+    "client_declaration": {
+      "time": {
+        "element": "month",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "dzień roboczy": {
+    "text": "dzień roboczy",
+    "client_declaration": {
+      "time": {
+        "or": [
+          {
+            "weekday": 1
+          },
+          {
+            "weekday": 2
+          },
+          {
+            "weekday": 3
+          },
+          {
+            "weekday": 4
+          },
+          {
+            "weekday": 5
+          }
+        ]
+      }
+    }
+  },
+  "Przedłużanie rzęs metodą objętościową": {
+    "text": "Przedłużanie rzęs metodą objętościową",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "param": {
+          "and": [
+            "metoda",
+            "objętościowy"
+          ]
+        },
+        "name": "przedłużać"
+      }
+    }
+  },
+  "wieczorem": {
+    "text": "wieczorem",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "evening"
+      }
+    }
+  },
+  "w godzinach rannych": {
+    "text": "w godzinach rannych",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "morning"
+      }
+    }
+  },
+  "poproszę w poniedziałek": {
+    "text": "poproszę w poniedziałek",
+    "client_declaration": {
+      "time": {
+        "weekday": 1
+      },
+      "action": {
+        "name": "poprosić"
+      }
+    }
+  },
+  "o dwudziestej": {
+    "text": "o dwudziestej",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "Tatuaż tradycyjny": {
+    "text": "Tatuaż tradycyjny",
+    "client_declaration": {
+      "service": {
+        "param": "tradycyjny",
+        "name": "tatuaż"
+      }
+    }
+  },
+  "w środy": {
+    "text": "w środy",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 3
+        },
+        "set": "future"
+      }
+    }
+  },
+  "w miesiącu styczniu": {
+    "text": "w miesiącu styczniu",
+    "client_declaration": {
+      "time": {
+        "month": 1
+      }
+    }
+  },
+  "Strzyżenie dziewczynki średnie": {
+    "text": "Strzyżenie dziewczynki średnie",
+    "client_declaration": {
+      "patient": {
+        "person": "dziewczynka"
+      },
+      "service": {
+        "param": "średni",
+        "name": "strzyc"
+      }
+    }
+  },
+  "do godziny 20": {
+    "text": "do godziny 20",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "godzina dwudziesta": {
+    "text": "godzina dwudziesta",
+    "client_declaration": {
+      "time": {
+        "hour": 20
+      }
+    }
+  },
+  "Masaż odchudzający": {
+    "text": "Masaż odchudzający",
+    "client_declaration": {
+      "service": {
+        "param": "odchudzający",
+        "name": "masaż"
+      }
+    }
+  },
+  "o 8": {
+    "text": "o 8",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": {
+            "with": [
+              20,
+              8
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Dobrze": {
+    "text": "Dobrze",
+    "client_declaration": {
+      "with": [
+        {
+          "action": {
+            "attitude": "dobrze"
+          }
+        },
+        {
+          "location": {
+            "quarter": "Dobra"
+          }
+        },
+        {
+          "location": {
+            "quarter": "Dobre"
+          }
+        },
+        {
+          "location": {
+            "town": "Dobra"
+          }
+        },
+        {
+          "location": {
+            "town": "Dobre"
+          }
+        }
+      ]
+    }
+  },
+  "Piercing sutka": {
+    "text": "Piercing sutka",
+    "client_declaration": {
+      "patient": {
+        "part": "sutek"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "pierwszy tydzień listopada": {
+    "text": "pierwszy tydzień listopada",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 1,
+        "set": {
+          "month": 11
+        }
+      }
+    }
+  },
+  "przed wtorkiem": {
+    "text": "przed wtorkiem",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "weekday": 2
+        }
+      }
+    }
+  },
+  "Masaż tajski": {
+    "text": "Masaż tajski",
+    "client_declaration": {
+      "service": {
+        "param": "tajski",
+        "name": "masaż"
+      }
+    }
+  },
+  "godzina 12 w południe": {
+    "text": "godzina 12 w południe",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "and": [
+            12,
+            {
+              "with": [
+                0,
+                12
+              ]
+            }
+          ]
+        },
+        "minute": 0
+      }
+    }
+  },
+  "w południe ": {
+    "text": "w południe ",
+    "client_declaration": {
+      "time": {
+        "hour": 12,
+        "minute": 0
+      }
+    }
+  },
+  "nieco zbyt tanio": {
+    "text": "nieco zbyt tanio",
+    "client_declaration": {
+      "price": {
+        "distance": {
+          "arg": {
+            "after": {
+              "previous": "proposal"
+            }
+          },
+          "mod": "nieco"
+        }
+      }
+    }
+  },
+  "popołudniu ": {
+    "text": "popołudniu ",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon"
+      }
+    }
+  },
+  "od ulicy Kosmatki": {
+    "text": "od ulicy Kosmatki",
+    "client_declaration": {
+      "location": {
+        "from": {
+          "street": "ulica",
+          "street_name": "Kosmatki"
+        }
+      }
+    }
+  },
+  "dowolny dzień": {
+    "text": "dowolny dzień",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": "day",
+          "mod": "dowolny"
+        }
+      }
+    }
+  },
+  "najwcześniej w środę po południu": {
+    "text": "najwcześniej w środę po południu",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "and": [
+            {
+              "after": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "weekday": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "poniedziałek po 18:00": {
+    "text": "poniedziałek po 18:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "weekday": 1
+          }
+        ]
+      }
+    }
+  },
+  "wcześniejszy termin": {
+    "text": "wcześniejszy termin",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "OK": {
+    "text": "OK",
+    "client_declaration": {
+      "action": {
+        "attitude": {
+          "with": [
+            "OK",
+            "ok"
+          ]
+        }
+      }
+    }
+  },
+  "Depilacja woskiem": {
+    "text": "Depilacja woskiem",
+    "client_declaration": {
+      "service": {
+        "param": "wosk",
+        "name": "depilacja"
+      }
+    }
+  },
+  "Strzyżenie męskie średnie": {
+    "text": "Strzyżenie męskie średnie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "męski",
+            "średni"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "Mycie włosów": {
+    "text": "Mycie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "myć"
+      }
+    }
+  },
+  "farbowanie": {
+    "text": "farbowanie",
+    "client_declaration": {
+      "service": {
+        "name": "farbować"
+      }
+    }
+  },
+  "Piercing ucha": {
+    "text": "Piercing ucha",
+    "client_declaration": {
+      "patient": {
+        "part": "ucho"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "Najpóźniej w środę": {
+    "text": "Najpóźniej w środę",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "weekday": 3
+        }
+      }
+    }
+  },
+  "8:00": {
+    "text": "8:00",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "with": [
+            20,
+            8
+          ]
+        },
+        "minute": 0
+      }
+    }
+  },
+  "Trwała ondulacja": {
+    "text": "Trwała ondulacja",
+    "client_declaration": {
+      "service": {
+        "name": "trwała ondulacja"
+      }
+    }
+  },
+  "chciałbym ostrzyc córkę": {
+    "text": "chciałbym ostrzyc córkę",
+    "client_declaration": {
+      "patient": {
+        "person": "córka"
+      },
+      "service": {
+        "name": "ostrzyc"
+      },
+      "action": {
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "100pln": {
+    "text": "100pln",
+    "client_declaration": {
+      "price": 100
+    }
+  },
+  "Depilacja pastą cukrową": {
+    "text": "Depilacja pastą cukrową",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "cukrowy",
+            "pasta"
+          ]
+        },
+        "name": "depilacja"
+      }
+    }
+  },
+  "blisko godziny 11:00": {
+    "text": "blisko godziny 11:00",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": {
+            "with": [
+              11,
+              23
+            ]
+          },
+          "minute": 0
+        }
+      }
+    }
+  },
+  "po 17": {
+    "text": "po 17",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "with": [
+            {
+              "hour": 17
+            },
+            {
+              "monthday": 17
+            },
+            {
+              "year": 17
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Masaż": {
+    "text": "Masaż",
+    "client_declaration": {
+      "service": {
+        "name": "masaż"
+      }
+    }
+  },
+  "do niedzieli": {
+    "text": "do niedzieli",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "with": [
+            {
+              "element": {
+                "weekday": 7
+              },
+              "set": "future"
+            },
+            {
+              "weekday": 7
+            }
+          ]
+        }
+      }
+    }
+  },
+  "między godziną 18 a godziną 20": {
+    "text": "między godziną 18 a godziną 20",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 18
+            }
+          },
+          {
+            "end": {
+              "hour": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Odsiwianie włosów": {
+    "text": "Odsiwianie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "odsiwiać"
+      }
+    }
+  },
+  "22 maja koło godziny 18": {
+    "text": "22 maja koło godziny 18",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "aprox": {
+              "hour": 18
+            }
+          },
+          {
+            "monthday": 22,
+            "month": 5
+          }
+        ]
+      }
+    }
+  },
+  "chciałbym się ostrzyc": {
+    "text": "chciałbym się ostrzyc",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "service": {
+        "name": "ostrzyc"
+      },
+      "action": {
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "inny piątek": {
+    "text": "inny piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "inny"
+        }
+      }
+    }
+  },
+  "Piercing brwi": {
+    "text": "Piercing brwi",
+    "client_declaration": {
+      "patient": {
+        "part": "brew"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "Potrzebuję umówić się na jutro na wizytę do weterynarza": {
+    "text": "Potrzebuję umówić się na jutro na wizytę do weterynarza",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "doer": {
+        "profession": "weterynarz"
+      },
+      "service": {
+        "name": "wizyta"
+      },
+      "time": {
+        "element": "day",
+        "index": 1,
+        "set": "future"
+      },
+      "action": {
+        "name": "umówić",
+        "attitude": "potrzebować"
+      }
+    }
+  },
+  "między 18 i 20": {
+    "text": "między 18 i 20",
+    "client_declaration": {
+      "time": {
+        "with": [
+          {
+            "and": [
+              {
+                "begin": {
+                  "hour": 18
+                }
+              },
+              {
+                "end": {
+                  "hour": 20
+                }
+              }
+            ]
+          },
+          {
+            "and": [
+              {
+                "begin": {
+                  "monthday": 18
+                }
+              },
+              {
+                "end": {
+                  "monthday": 20
+                }
+              }
+            ]
+          },
+          {
+            "and": [
+              {
+                "begin": {
+                  "year": 18
+                }
+              },
+              {
+                "end": {
+                  "year": 20
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "po weekendzie": {
+    "text": "po weekendzie",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "end": {
+            "weekday": 7
+          },
+          "begin": {
+            "weekday": 6
+          }
+        }
+      }
+    }
+  },
+  "najpóźniej za miesiąc": {
+    "text": "najpóźniej za miesiąc",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "element": "month",
+          "index": 1,
+          "set": "future"
+        }
+      }
+    }
+  },
+  "Manicure biologiczny": {
+    "text": "Manicure biologiczny",
+    "client_declaration": {
+      "service": {
+        "param": "biologiczny",
+        "name": "manicure"
+      }
+    }
+  },
+  "późniejszy termin": {
+    "text": "późniejszy termin",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "Manicure klasyczny": {
+    "text": "Manicure klasyczny",
+    "client_declaration": {
+      "service": {
+        "param": "klasyczny",
+        "name": "manicure"
+      }
+    }
+  },
+  "od 10 do 20": {
+    "text": "od 10 do 20",
+    "client_declaration": {
+      "and": [
+        {
+          "with": [
+            {
+              "price": {
+                "begin": 10
+              }
+            },
+            {
+              "rating": {
+                "begin": 10
+              }
+            },
+            {
+              "time": {
+                "begin": {
+                  "with": [
+                    {
+                      "hour": {
+                        "with": [
+                          10,
+                          22
+                        ]
+                      }
+                    },
+                    {
+                      "monthday": 10
+                    },
+                    {
+                      "year": 10
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "with": [
+            {
+              "price": {
+                "end": 20
+              }
+            },
+            {
+              "rating": {
+                "end": 20
+              }
+            },
+            {
+              "time": {
+                "end": {
+                  "with": [
+                    {
+                      "hour": 20
+                    },
+                    {
+                      "monthday": 20
+                    },
+                    {
+                      "year": 20
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "przy ulicy Żurawiej": {
+    "text": "przy ulicy Żurawiej",
+    "client_declaration": {
+      "location": {
+        "street": "ulica",
+        "street_name": "Żurawia"
+      }
+    }
+  },
+  "po dwudziestej": {
+    "text": "po dwudziestej",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "późniejsza godzina": {
+    "text": "późniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "after": {
+            "previous": "proposal"
+          }
+        }
+      }
+    }
+  },
+  "w Warszawie na Białołęce": {
+    "text": "w Warszawie na Białołęce",
+    "client_declaration": {
+      "location": {
+        "and": [
+          {
+            "with": [
+              {
+                "quarter": "Białołęka"
+              },
+              {
+                "town": "Białołęka"
+              }
+            ]
+          },
+          {
+            "with": [
+              {
+                "quarter": "Warszawa"
+              },
+              {
+                "town": "Warszawa"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "tylko 18": {
+    "text": "tylko 18",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "with": [
+            {
+              "arg": {
+                "monthday": 18
+              },
+              "mod": "tylko"
+            },
+            {
+              "arg": {
+                "year": 18
+              },
+              "mod": "tylko"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "między 12:00 a 13:00": {
+    "text": "między 12:00 a 13:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": {
+                "with": [
+                  0,
+                  12
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 13,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Piercing twarzy": {
+    "text": "Piercing twarzy",
+    "client_declaration": {
+      "patient": {
+        "part": "twarz"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "Makijaż wieczorowy": {
+    "text": "Makijaż wieczorowy",
+    "client_declaration": {
+      "service": {
+        "param": "wieczorowy",
+        "name": "makijaż"
+      }
+    }
+  },
+  "po 5.3.2018 r.": {
+    "text": "po 5.3.2018 r.",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "monthday": 5,
+          "month": 3,
+          "year": 2018
+        }
+      }
+    }
+  },
+  "trochę późniejsza godzina": {
+    "text": "trochę późniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "distance": {
+            "arg": {
+              "after": {
+                "previous": "proposal"
+              }
+            },
+            "mod": "trochę"
+          }
+        }
+      }
+    }
+  },
+  "trochę po osiemnastej": {
+    "text": "trochę po osiemnastej",
+    "client_declaration": {
+      "time": {
+        "distance": {
+          "arg": {
+            "after": {
+              "hour": 18
+            }
+          },
+          "mod": "trochę"
+        }
+      }
+    }
+  },
+  "Strzyżenie dziewczynki krótkie": {
+    "text": "Strzyżenie dziewczynki krótkie",
+    "client_declaration": {
+      "patient": {
+        "person": "dziewczynka"
+      },
+      "service": {
+        "param": "krótki",
+        "name": "strzyc"
+      }
+    }
+  },
+  "w nocy ": {
+    "text": "w nocy ",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "night"
+      }
+    }
+  },
+  "Stylizacja": {
+    "text": "Stylizacja",
+    "client_declaration": {
+      "service": {
+        "name": "stylizacja"
+      }
+    }
+  },
+  "Masaż klasyczny": {
+    "text": "Masaż klasyczny",
+    "client_declaration": {
+      "service": {
+        "param": "klasyczny",
+        "name": "masaż"
+      }
+    }
+  },
+  "w dniach 28-31": {
+    "text": "w dniach 28-31",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "monthday": 28
+            }
+          },
+          {
+            "end": {
+              "monthday": 31
+            }
+          }
+        ]
+      }
+    }
+  },
+  "dwudziestego": {
+    "text": "dwudziestego",
+    "client_declaration": {
+      "time": {
+        "monthday": 20
+      }
+    }
+  },
+  "dowolny dzień tylko po godzinie 16": {
+    "text": "dowolny dzień tylko po godzinie 16",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "flexibility": {
+              "arg": "day",
+              "mod": "dowolny"
+            }
+          },
+          {
+            "flexibility": {
+              "arg": {
+                "after": {
+                  "hour": 16
+                }
+              },
+              "mod": "tylko"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "2.05-4.06": {
+    "text": "2.05-4.06",
+    "client_declaration": {
+      "time": {
+        "with": [
+          {
+            "and": [
+              {
+                "begin": {
+                  "hour": {
+                    "with": [
+                      14,
+                      2
+                    ]
+                  },
+                  "minute": 5
+                }
+              },
+              {
+                "end": {
+                  "hour": {
+                    "with": [
+                      16,
+                      4
+                    ]
+                  },
+                  "minute": 6
+                }
+              }
+            ]
+          },
+          {
+            "and": [
+              {
+                "begin": {
+                  "monthday": 2,
+                  "month": 5
+                }
+              },
+              {
+                "end": {
+                  "monthday": 4,
+                  "month": 6
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Pedicure biologiczny": {
+    "text": "Pedicure biologiczny",
+    "client_declaration": {
+      "service": {
+        "param": "biologiczny",
+        "name": "pedicure"
+      }
+    }
+  },
+  "w godzinach 18-20": {
+    "text": "w godzinach 18-20",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 18
+            }
+          },
+          {
+            "end": {
+              "hour": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Pielęgnacja brody": {
+    "text": "Pielęgnacja brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "name": "pielęgnacja"
+      }
+    }
+  },
+  "22 maja  o 17:45": {
+    "text": "22 maja  o 17:45",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "at": {
+              "hour": 17,
+              "minute": 45
+            }
+          },
+          {
+            "monthday": 22,
+            "month": 5
+          }
+        ]
+      }
+    }
+  },
+  "sobota 8.04, później niż o 9:00": {
+    "text": "sobota 8.04, później niż o 9:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "at": {
+                "hour": {
+                  "with": [
+                    21,
+                    9
+                  ]
+                },
+                "minute": 0
+              }
+            }
+          },
+          {
+            "weekday": 6
+          },
+          {
+            "with": [
+              {
+                "hour": {
+                  "with": [
+                    20,
+                    8
+                  ]
+                },
+                "minute": 4
+              },
+              {
+                "monthday": 8,
+                "month": 4
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "godzina dziewiętnasta": {
+    "text": "godzina dziewiętnasta",
+    "client_declaration": {
+      "time": {
+        "hour": 19
+      }
+    }
+  },
+  "chcę o 13": {
+    "text": "chcę o 13",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": 13
+        }
+      },
+      "action": {
+        "attitude": "chcieć"
+      }
+    }
+  },
+  "jakiś piątek": {
+    "text": "jakiś piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "jakiś"
+        }
+      }
+    }
+  },
+  "dowolny tydzień": {
+    "text": "dowolny tydzień",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": "week",
+          "mod": "dowolny"
+        }
+      }
+    }
+  },
+  "Uzupełnienie rzęs": {
+    "text": "Uzupełnienie rzęs",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "name": "uzupełnić"
+      }
+    }
+  },
+  "zbyt niska ocena": {
+    "text": "zbyt niska ocena",
+    "client_declaration": {
+      "rating": {
+        "after": {
+          "previous": "proposal"
+        }
+      }
+    }
+  },
+  "miasto": {
+    "text": "miasto",
+    "client_declaration": {
+      "location": "town"
+    }
+  },
+  "za wczesna godzina": {
+    "text": "za wczesna godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "after": {
+            "previous": "proposal"
+          }
+        }
+      }
+    }
+  },
+  "Pedicure": {
+    "text": "Pedicure",
+    "client_declaration": {
+      "service": {
+        "name": "pedicure"
+      }
+    }
+  },
+  "godziny popołudniowe": {
+    "text": "godziny popołudniowe",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon"
+      }
+    }
+  },
+  "Piercing pępka": {
+    "text": "Piercing pępka",
+    "client_declaration": {
+      "patient": {
+        "part": "pępek"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "blisko osiemnastej": {
+    "text": "blisko osiemnastej",
+    "client_declaration": {
+      "time": {
+        "aprox": {
+          "hour": 18
+        }
+      }
+    }
+  },
+  "o godzinie 20 minut 55": {
+    "text": "o godzinie 20 minut 55",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": 20,
+          "minute": 55
+        }
+      }
+    }
+  },
+  "okey": {
+    "text": "okey",
+    "client_declaration": {
+      "action": {
+        "attitude": "okey"
+      }
+    }
+  },
+  "po godzinie 15:00": {
+    "text": "po godzinie 15:00",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "hour": 15,
+          "minute": 0
+        }
+      }
+    }
+  },
+  "przed godziną 20": {
+    "text": "przed godziną 20",
+    "client_declaration": {
+      "time": {
+        "before": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "w czwartek": {
+    "text": "w czwartek",
+    "client_declaration": {
+      "time": {
+        "weekday": 4
+      }
+    }
+  },
+  "Od 10.05 do 16.05": {
+    "text": "Od 10.05 do 16.05",
+    "client_declaration": {
+      "and": [
+        {
+          "with": [
+            {
+              "price": {
+                "begin": 10.05
+              }
+            },
+            {
+              "rating": {
+                "begin": 10.05
+              }
+            },
+            {
+              "time": {
+                "begin": {
+                  "with": [
+                    {
+                      "hour": {
+                        "with": [
+                          10,
+                          22
+                        ]
+                      },
+                      "minute": 5
+                    },
+                    {
+                      "monthday": 10,
+                      "month": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "with": [
+            {
+              "price": {
+                "end": 16.05
+              }
+            },
+            {
+              "rating": {
+                "end": 16.05
+              }
+            },
+            {
+              "time": {
+                "end": {
+                  "with": [
+                    {
+                      "hour": 16,
+                      "minute": 5
+                    },
+                    {
+                      "monthday": 16,
+                      "month": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ten tydzień": {
+    "text": "ten tydzień",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 0,
+        "set": "future"
+      }
+    }
+  },
+  "Strzyżenie chłopca": {
+    "text": "Strzyżenie chłopca",
+    "client_declaration": {
+      "patient": {
+        "person": "chłopiec"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "w godzinach popołudniowych": {
+    "text": "w godzinach popołudniowych",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon"
+      }
+    }
+  },
+  "jednak (*)": {
+    "text": "jednak $1",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "monthday": 28,
+            "month": 12
+          },
+          "mod": "jednak"
+        }
+      }
+    }
+  },
+  "Golenie brzytwą brody": {
+    "text": "Golenie brzytwą brody",
+    "client_declaration": {
+      "patient": {
+        "part": "broda"
+      },
+      "service": {
+        "param": "brzytwa",
+        "name": "golić"
+      }
+    }
+  },
+  "Masaż stóp": {
+    "text": "Masaż stóp",
+    "client_declaration": {
+      "patient": {
+        "part": "stopa"
+      },
+      "service": {
+        "name": "masaż"
+      }
+    }
+  },
+  "jeszcze dziś": {
+    "text": "jeszcze dziś",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "element": "day",
+            "index": 0,
+            "set": "future"
+          },
+          "mod": "jeszcze"
+        }
+      }
+    }
+  },
+  "każdy piątek": {
+    "text": "każdy piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "każdy"
+        }
+      }
+    }
+  },
+  "Dzień dobry. Potrzebuję umówić się jak najszybciej na wizytę do weterynarza.": {
+    "text": "Dzień dobry. Potrzebuję umówić się jak najszybciej na wizytę do weterynarza.",
+    "client_declaration": {
+      "patient": {
+        "person": "się"
+      },
+      "doer": {
+        "profession": "weterynarz"
+      },
+      "service": {
+        "name": "wizyta"
+      },
+      "time": {
+        "sort": "ascending"
+      },
+      "action": {
+        "name": "umówić",
+        "attitude": {
+          "and": [
+            "dzień dobry",
+            "potrzebować"
+          ]
+        }
+      }
+    }
+  },
+  "dziewiętnastego": {
+    "text": "dziewiętnastego",
+    "client_declaration": {
+      "time": {
+        "monthday": 19
+      }
+    }
+  },
+  "w przyszłym tygodniu": {
+    "text": "w przyszłym tygodniu",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "Piercing wargi": {
+    "text": "Piercing wargi",
+    "client_declaration": {
+      "patient": {
+        "part": "warga"
+      },
+      "service": {
+        "name": "piercing"
+      }
+    }
+  },
+  "W poniedziałek ósmego ": {
+    "text": "W poniedziałek ósmego ",
+    "client_declaration": {
+      "time": {
+        "monthday": 8,
+        "weekday": 1
+      }
+    }
+  },
+  "rezerwuję wizytę u rotmistrza": {
+    "text": "rezerwuję wizytę u rotmistrza",
+    "client_declaration": {
+      "doer": {
+        "profession": "rotmistrz"
+      },
+      "service": {
+        "name": "wizyta"
+      },
+      "action": {
+        "name": "rezerwować"
+      }
+    }
+  },
+  "od Kosmatki": {
+    "text": "od Kosmatki",
+    "client_declaration": {
+      "location": {
+        "from": {
+          "street_name": "Kosmatki"
+        }
+      }
+    }
+  },
+  "w Warszawie": {
+    "text": "w Warszawie",
+    "client_declaration": {
+      "location": {
+        "with": [
+          {
+            "quarter": "Warszawa"
+          },
+          {
+            "town": "Warszawa"
+          }
+        ]
+      }
+    }
+  },
+  "godziny okołopopołudniowe": {
+    "text": "godziny okołopopołudniowe",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon"
+      }
+    }
+  },
+  "któryś piątek": {
+    "text": "któryś piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "któryś"
+        }
+      }
+    }
+  },
+  "Targówek, najchętniej Bródno": {
+    "text": "Targówek, najchętniej Bródno",
+    "client_declaration": {
+      "location": {
+        "and": [
+          {
+            "flexibility": {
+              "arg": {
+                "quarter": "Bródno"
+              },
+              "mod": "najchętniej"
+            }
+          },
+          {
+            "with": [
+              {
+                "quarter": "Targówek"
+              },
+              {
+                "town": "Targówka"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Upięcie włosów": {
+    "text": "Upięcie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "upiąć"
+      }
+    }
+  },
+  "Nie": {
+    "text": "Nie",
+    "client_declaration": {
+      "action": {
+        "attitude": "nie"
+      }
+    }
+  },
+  "Strzyżenie męskie krótkie": {
+    "text": "Strzyżenie męskie krótkie",
+    "client_declaration": {
+      "service": {
+        "param": {
+          "and": [
+            "krótki",
+            "męski"
+          ]
+        },
+        "name": "strzyc"
+      }
+    }
+  },
+  "potrzebuję zarezerwować": {
+    "text": "potrzebuję zarezerwować",
+    "client_declaration": {
+      "action": {
+        "name": "zarezerwować",
+        "attitude": "potrzebować"
+      }
+    }
+  },
+  "Naprawa paznokcia żelem": {
+    "text": "Naprawa paznokcia żelem",
+    "client_declaration": {
+      "patient": {
+        "part": "paznokieć"
+      },
+      "service": {
+        "param": "żel",
+        "name": "naprawa"
+      }
+    }
+  },
+  "Warszawa w pobliżu Korkowej": {
+    "text": "Warszawa w pobliżu Korkowej",
+    "client_declaration": {
+      "location": {
+        "and": [
+          {
+            "aprox": {
+              "street_name": "Korkowa"
+            }
+          },
+          {
+            "with": [
+              {
+                "quarter": "Warszawa"
+              },
+              {
+                "town": "Warszawa"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "po 26": {
+    "text": "po 26",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "with": [
+            {
+              "monthday": 26
+            },
+            {
+              "year": 26
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Sombre": {
+    "text": "Sombre",
+    "client_declaration": {
+      "service": {
+        "name": "sombre"
+      }
+    }
+  },
+  "w listopadzie": {
+    "text": "w listopadzie",
+    "client_declaration": {
+      "time": {
+        "month": 11
+      }
+    }
+  },
+  "Refleksy": {
+    "text": "Refleksy",
+    "client_declaration": {
+      "service": {
+        "name": "refleks"
+      }
+    }
+  },
+  "jak najpóźniej": {
+    "text": "jak najpóźniej",
+    "client_declaration": {
+      "time": {
+        "sort": "descending"
+      }
+    }
+  },
+  "późne popołudnie": {
+    "text": "późne popołudnie",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "afternoon",
+        "time_of_day_mod": "late"
+      }
+    }
+  },
+  "Manicure francuski": {
+    "text": "Manicure francuski",
+    "client_declaration": {
+      "service": {
+        "param": "francuski",
+        "name": "manicure"
+      }
+    }
+  },
+  "jakikolwiek piątek": {
+    "text": "jakikolwiek piątek",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "weekday": 5
+          },
+          "mod": "jakikolwiek"
+        }
+      }
+    }
+  },
+  "o godzinie 12:00": {
+    "text": "o godzinie 12:00",
+    "client_declaration": {
+      "time": {
+        "at": {
+          "hour": {
+            "with": [
+              0,
+              12
+            ]
+          },
+          "minute": 0
+        }
+      }
+    }
+  },
+  "Makijaż specjalny": {
+    "text": "Makijaż specjalny",
+    "client_declaration": {
+      "service": {
+        "param": "specjalny",
+        "name": "makijaż"
+      }
+    }
+  },
+  "tylko poniedziałki": {
+    "text": "tylko poniedziałki",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "element": {
+              "weekday": 1
+            },
+            "set": "future"
+          },
+          "mod": "tylko"
+        }
+      }
+    }
+  },
+  "Henna ": {
+    "text": "Henna ",
+    "client_declaration": {
+      "service": {
+        "name": "henna"
+      }
+    }
+  },
+  "w przyszłym tygodniu po godzinie 16:00": {
+    "text": "w przyszłym tygodniu po godzinie 16:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "element": "week",
+            "index": 1,
+            "set": "future"
+          }
+        ]
+      }
+    }
+  },
+  "najchętniej Bródno": {
+    "text": "najchętniej Bródno",
+    "client_declaration": {
+      "location": {
+        "flexibility": {
+          "arg": {
+            "quarter": "Bródno"
+          },
+          "mod": "najchętniej"
+        }
+      }
+    }
+  },
+  "jeszcze Korkowa": {
+    "text": "jeszcze Korkowa",
+    "client_declaration": {
+      "location": {
+        "flexibility": {
+          "with": [
+            {
+              "arg": {
+                "quarter": "Korkowo"
+              },
+              "mod": "jeszcze"
+            },
+            {
+              "arg": {
+                "street_name": "Korkowa"
+              },
+              "mod": "jeszcze"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "czwartek w okolicach godziny 11.00": {
+    "text": "czwartek w okolicach godziny 11.00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "aprox": {
+              "hour": {
+                "with": [
+                  11,
+                  23
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "weekday": 4
+          }
+        ]
+      }
+    }
+  },
+  "w Płocku": {
+    "text": "w Płocku",
+    "client_declaration": {
+      "location": {
+        "town": {
+          "with": [
+            "Płock",
+            "Płocko"
+          ]
+        }
+      }
+    }
+  },
+  "potrzebuję zrobić kotu piercing ogona": {
+    "text": "potrzebuję zrobić kotu piercing ogona",
+    "client_declaration": {
+      "patient": {
+        "part": "ogon",
+        "animal": "kot"
+      },
+      "service": {
+        "name": "piercing"
+      },
+      "action": {
+        "name": "zrobić",
+        "attitude": "potrzebować"
+      }
+    }
+  },
+  "jutro rano": {
+    "text": "jutro rano",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          },
+          {
+            "time_of_day": "morning"
+          }
+        ]
+      }
+    }
+  },
+  "za 3 dni": {
+    "text": "za 3 dni",
+    "client_declaration": {
+      "time": {
+        "element": "day",
+        "index": 3,
+        "set": "future"
+      }
+    }
+  },
+  "po godzinie 20": {
+    "text": "po godzinie 20",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "hour": 20
+        }
+      }
+    }
+  },
+  "za trzy dni": {
+    "text": "za trzy dni",
+    "client_declaration": {
+      "time": {
+        "element": "day",
+        "index": 3,
+        "set": "future"
+      }
+    }
+  },
+  "godziny przedpołudniowe": {
+    "text": "godziny przedpołudniowe",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "before_noon"
+      }
+    }
+  },
+  "Golenie głowy": {
+    "text": "Golenie głowy",
+    "client_declaration": {
+      "patient": {
+        "part": "głowa"
+      },
+      "service": {
+        "name": "golić"
+      }
+    }
+  },
+  "godzina dwudziesta trzecia": {
+    "text": "godzina dwudziesta trzecia",
+    "client_declaration": {
+      "time": {
+        "hour": 23
+      }
+    }
+  },
+  "Żoliborz": {
+    "text": "Żoliborz",
+    "client_declaration": {
+      "location": {
+        "quarter": "Żoliborz"
+      }
+    }
+  },
+  "dzień dwudziesty trzeci": {
+    "text": "dzień dwudziesty trzeci",
+    "client_declaration": {
+      "time": {
+        "monthday": 23
+      }
+    }
+  },
+  "Makijaż permanentny": {
+    "text": "Makijaż permanentny",
+    "client_declaration": {
+      "service": {
+        "param": "permanentny",
+        "name": "makijaż"
+      }
+    }
+  },
+  "1 września": {
+    "text": "1 września",
+    "client_declaration": {
+      "time": {
+        "monthday": 1,
+        "month": 9
+      }
+    }
+  },
+  "we wrześniu": {
+    "text": "we wrześniu",
+    "client_declaration": {
+      "time": {
+        "month": 9
+      }
+    }
+  },
+  "Manicure": {
+    "text": "Manicure",
+    "client_declaration": {
+      "service": {
+        "name": "manicure"
+      }
+    }
+  },
+  "poniedziałek 24.04 10:00": {
+    "text": "poniedziałek 24.04 10:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "hour": {
+              "with": [
+                10,
+                22
+              ]
+            },
+            "minute": 0
+          },
+          {
+            "weekday": 1
+          },
+          {
+            "with": [
+              {
+                "hour": 24,
+                "minute": 4
+              },
+              {
+                "monthday": 24,
+                "month": 4
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2 maja": {
+    "text": "2 maja",
+    "client_declaration": {
+      "time": {
+        "monthday": 2,
+        "month": 5
+      }
+    }
+  },
+  "poniedziałki": {
+    "text": "poniedziałki",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "weekday": 1
+        },
+        "set": "future"
+      }
+    }
+  },
+  "Przedłużanie paznokci żelem": {
+    "text": "Przedłużanie paznokci żelem",
+    "client_declaration": {
+      "patient": {
+        "part": "paznokieć"
+      },
+      "service": {
+        "param": "żel",
+        "name": "przedłużać"
+      }
+    }
+  },
+  "w drugim tygodniu października": {
+    "text": "w drugim tygodniu października",
+    "client_declaration": {
+      "time": {
+        "element": "week",
+        "index": 2,
+        "set": {
+          "month": 10
+        }
+      }
+    }
+  },
+  "Masaż relaksacyjny": {
+    "text": "Masaż relaksacyjny",
+    "client_declaration": {
+      "service": {
+        "param": "relaksacyjny",
+        "name": "masaż"
+      }
+    }
+  },
+  "Przedłużanie włosów": {
+    "text": "Przedłużanie włosów",
+    "client_declaration": {
+      "patient": {
+        "part": "włos"
+      },
+      "service": {
+        "name": "przedłużać"
+      }
+    }
+  },
+  "Czesanie okazjonalne": {
+    "text": "Czesanie okazjonalne",
+    "client_declaration": {
+      "service": {
+        "param": "okazjonalny",
+        "name": "czesać"
+      }
+    }
+  },
+  "w piątek dnia 13": {
+    "text": "w piątek dnia 13",
+    "client_declaration": {
+      "time": {
+        "monthday": 13,
+        "weekday": 5
+      }
+    }
+  },
+  "Masaż sportowy": {
+    "text": "Masaż sportowy",
+    "client_declaration": {
+      "service": {
+        "param": "sportowy",
+        "name": "masaż"
+      }
+    }
+  },
+  "w przyszłym roku": {
+    "text": "w przyszłym roku",
+    "client_declaration": {
+      "time": {
+        "element": "year",
+        "index": 1,
+        "set": "future"
+      }
+    }
+  },
+  "jak najniższa cena": {
+    "text": "jak najniższa cena",
+    "client_declaration": {
+      "price": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "piątek, 2 czerwca do godziny 12:00": {
+    "text": "piątek, 2 czerwca do godziny 12:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "end": {
+              "hour": {
+                "with": [
+                  0,
+                  12
+                ]
+              },
+              "minute": 0
+            }
+          },
+          {
+            "monthday": 2,
+            "month": 6
+          },
+          {
+            "weekday": 5
+          }
+        ]
+      }
+    }
+  },
+  "jutro po południu": {
+    "text": "jutro po południu",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "after": {
+              "hour": 12,
+              "minute": 0
+            }
+          },
+          {
+            "element": "day",
+            "index": 1,
+            "set": "future"
+          }
+        ]
+      }
+    }
+  },
+  "Strzyżenie grzywki": {
+    "text": "Strzyżenie grzywki",
+    "client_declaration": {
+      "patient": {
+        "part": "grzywka"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "12.05 między 14:00 a 15:00": {
+    "text": "12.05 między 14:00 a 15:00",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "end": {
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "with": [
+              {
+                "hour": {
+                  "with": [
+                    0,
+                    12
+                  ]
+                },
+                "minute": 5
+              },
+              {
+                "monthday": 12,
+                "month": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "najwcześniej we wtorek": {
+    "text": "najwcześniej we wtorek",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "weekday": 2
+        }
+      }
+    }
+  },
+  "drożej niż 10PLN": {
+    "text": "drożej niż 10PLN",
+    "client_declaration": {
+      "price": {
+        "after": 10
+      }
+    }
+  },
+  "Najpóźniej do 18": {
+    "text": "Najpóźniej do 18",
+    "client_declaration": {
+      "time": {
+        "end": {
+          "end": {
+            "with": [
+              {
+                "hour": 18
+              },
+              {
+                "monthday": 18
+              },
+              {
+                "year": 18
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "po 19": {
+    "text": "po 19",
+    "client_declaration": {
+      "time": {
+        "after": {
+          "with": [
+            {
+              "hour": 19
+            },
+            {
+              "monthday": 19
+            },
+            {
+              "year": 19
+            }
+          ]
+        }
+      }
+    }
+  },
+  "w 2020": {
+    "text": "w 2020",
+    "client_declaration": {
+      "time": {
+        "year": 2020
+      }
+    }
+  },
+  "jak najgorsze oceny": {
+    "text": "jak najgorsze oceny",
+    "client_declaration": {
+      "rating": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "godzina dwudziesta czwarta": {
+    "text": "godzina dwudziesta czwarta",
+    "client_declaration": {
+      "time": {
+        "hour": 0
+      }
+    }
+  },
+  "Henna rzęs": {
+    "text": "Henna rzęs",
+    "client_declaration": {
+      "patient": {
+        "part": "rzęsa"
+      },
+      "service": {
+        "name": "henna"
+      }
+    }
+  },
+  "w niedzielę trochę po 7:25": {
+    "text": "w niedzielę trochę po 7:25",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "distance": {
+              "arg": {
+                "after": {
+                  "hour": {
+                    "with": [
+                      19,
+                      7
+                    ]
+                  },
+                  "minute": 25
+                }
+              },
+              "mod": "trochę"
+            }
+          },
+          {
+            "weekday": 7
+          }
+        ]
+      }
+    }
+  },
+  "wizyta u fryzjera": {
+    "text": "wizyta u fryzjera",
+    "client_declaration": {
+      "doer": {
+        "profession": "fryzjer"
+      },
+      "service": {
+        "name": "wizyta"
+      }
+    }
+  },
+  "Warszawa Wawer": {
+    "text": "Warszawa Wawer",
+    "client_declaration": {
+      "location": {
+        "and": [
+          {
+            "quarter": {
+              "with": [
+                "Wawer",
+                "Wawry"
+              ]
+            }
+          },
+          {
+            "with": [
+              {
+                "quarter": "Warszawa"
+              },
+              {
+                "town": "Warszawa"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "ostatni weekend października": {
+    "text": "ostatni weekend października",
+    "client_declaration": {
+      "time": {
+        "element": {
+          "end": {
+            "weekday": 7
+          },
+          "begin": {
+            "weekday": 6
+          }
+        },
+        "index": -1,
+        "set": {
+          "month": 10
+        }
+      }
+    }
+  },
+  "Zdjęcie żelu": {
+    "text": "Zdjęcie żelu",
+    "client_declaration": {
+      "service": {
+        "param": "żel",
+        "name": "zdjąć"
+      }
+    }
+  },
+  "od 10 do 23": {
+    "text": "od 10 do 23",
+    "client_declaration": {
+      "and": [
+        {
+          "with": [
+            {
+              "price": {
+                "begin": 10
+              }
+            },
+            {
+              "rating": {
+                "begin": 10
+              }
+            },
+            {
+              "time": {
+                "begin": {
+                  "with": [
+                    {
+                      "hour": {
+                        "with": [
+                          10,
+                          22
+                        ]
+                      }
+                    },
+                    {
+                      "monthday": 10
+                    },
+                    {
+                      "year": 10
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "with": [
+            {
+              "price": {
+                "end": 23
+              }
+            },
+            {
+              "rating": {
+                "end": 23
+              }
+            },
+            {
+              "time": {
+                "end": {
+                  "with": [
+                    {
+                      "hour": 23
+                    },
+                    {
+                      "monthday": 23
+                    },
+                    {
+                      "year": 23
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "chętnie": {
+    "text": "chętnie",
+    "client_declaration": {
+      "action": {
+        "attitude": "chętnie"
+      }
+    }
+  },
+  "niech będzie": {
+    "text": "niech będzie",
+    "client_declaration": {
+      "action": {
+        "attitude": "niech będzie"
+      }
+    }
+  },
+  "Pedicure klasyczny": {
+    "text": "Pedicure klasyczny",
+    "client_declaration": {
+      "service": {
+        "param": "klasyczny",
+        "name": "pedicure"
+      }
+    }
+  },
+  "w każdy pierwszy poniedziałek miesiąca": {
+    "text": "w każdy pierwszy poniedziałek miesiąca",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "element": {
+              "weekday": 1
+            },
+            "index": 1,
+            "set": "month"
+          },
+          "mod": "każdy"
+        }
+      }
+    }
+  },
+  "dnia 25": {
+    "text": "dnia 25",
+    "client_declaration": {
+      "time": {
+        "monthday": 25
+      }
+    }
+  },
+  "5.3.2018-31.6.2020": {
+    "text": "5.3.2018-31.6.2020",
+    "client_declaration": {
+      "time": {
+        "and": [
+          {
+            "begin": {
+              "monthday": 5,
+              "month": 3,
+              "year": 2018
+            }
+          },
+          {
+            "end": {
+              "monthday": 31,
+              "month": 6,
+              "year": 2020
+            }
+          }
+        ]
+      }
+    }
+  },
+  "jak najwcześniej": {
+    "text": "jak najwcześniej",
+    "client_declaration": {
+      "time": {
+        "sort": "ascending"
+      }
+    }
+  },
+  "od dnia 3": {
+    "text": "od dnia 3",
+    "client_declaration": {
+      "time": {
+        "begin": {
+          "monthday": 3
+        }
+      }
+    }
+  },
+  "za późna godzina": {
+    "text": "za późna godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "before": {
+            "previous": "proposal"
+          }
+        }
+      }
+    }
+  },
+  "Opalanie ciała": {
+    "text": "Opalanie ciała",
+    "client_declaration": {
+      "patient": {
+        "part": "ciało"
+      },
+      "service": {
+        "name": "opalać"
+      }
+    }
+  },
+  "strzyżenie dziadka": {
+    "text": "strzyżenie dziadka",
+    "client_declaration": {
+      "patient": {
+        "person": "dziadek"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  },
+  "nieco późniejsza godzina": {
+    "text": "nieco późniejsza godzina",
+    "client_declaration": {
+      "time": {
+        "hour": {
+          "distance": {
+            "arg": {
+              "after": {
+                "previous": "proposal"
+              }
+            },
+            "mod": "nieco"
+          }
+        }
+      }
+    }
+  },
+  "najchętniej wcześniej": {
+    "text": "najchętniej wcześniej",
+    "client_declaration": {
+      "time": {
+        "flexibility": {
+          "arg": {
+            "before": {
+              "previous": "proposal"
+            }
+          },
+          "mod": "najchętniej"
+        }
+      }
+    }
+  },
+  "godziny poranne": {
+    "text": "godziny poranne",
+    "client_declaration": {
+      "time": {
+        "time_of_day": "morning"
+      }
+    }
+  },
+  "Strzyżenie wąsów": {
+    "text": "Strzyżenie wąsów",
+    "client_declaration": {
+      "patient": {
+        "part": "wąs"
+      },
+      "service": {
+        "name": "strzyc"
+      }
+    }
+  }
+}

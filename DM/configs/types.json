@@ -1,0 +1,109 @@
+{
+  "recognised": {
+    "przedmiot": [],
+    "zwierzak": [],
+    "osoba": [
+      "babcia",
+      "brat",
+      "chłopak",
+      "chłopczyk",
+      "chłopiec",
+      "ciocia",
+      "córeczka",
+      "córka",
+      "dziadek",
+      "dziecko",
+      "dziewczyna",
+      "dziewczynka",
+      "kobieta",
+      "kolega",
+      "koleżanka",
+      "kuzyn",
+      "kuzynka",
+      "mama",
+      "matka",
+      "mężczyzna",
+      "ojciec",
+      "prababcia",
+      "pradziadek",
+      "przyjaciel",
+      "przyjaciółka",
+      "siostra",
+      "syn",
+      "synek",
+      "tata",
+      "wujek"
+    ]
+  },
+  "subtypes": {
+    "kobieta": [
+      "córka",
+      "córeczka",
+      "matka",
+      "mama",
+      "babcia",
+      "prababcia",
+      "dziewczyna",
+      "przyjaciółka",
+      "koleżanka",
+      "ciocia",
+      "kobieta",
+      "siostra",
+      "kuzynka"
+    ],
+	"kobieta w ciąży":[],
+	"młoda mama":[],
+	"kobieta karmiąca":[],
+    "mężczyzna": [
+      "syn",
+      "synek",
+      "ojciec",
+      "tata",
+      "dziadek",
+      "pradziadek",
+      "chłopak",
+      "przyjaciel",
+      "kolega",
+      "wujek",
+      "mężczyzna",
+      "brat",
+      "kuzyn"
+    ],
+    "chłopiec": [
+      "syn",
+      "synek",
+      "chłopiec",
+      "chłopczyk",
+      "dziecko"
+    ],
+    "nastolatek": [
+      "chłopak",
+      "syn",
+      "synek"
+    ],
+    "dziewczynka": [
+      "córka",
+      "córeczka",
+      "dziewczyna",
+      "dziewczynka",
+      "dziecko"
+    ],
+    "dziewczynka": [
+      "córka",
+      "córeczka",
+      "dziewczyna",
+      "dziewczynka",
+      "dziecko"
+    ],
+    "nastolatka": [
+      "córka",
+      "córeczka",
+      "dziewczyna"
+    ],
+    "nastolatka": [
+      "córka",
+      "córeczka",
+      "dziewczyna"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+#  Dialog Manager
+#  Copyright (C) 2022 SELIDOR - T. Puza, Ł. Wasilewski Sp.J.
+#
+#  This library is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This library is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+version: 1
+disable_existing_loggers: false
+formatters: 
+  standard_with_timestamp:
+    format: '[%(asctime)s %(levelname)s] %(name)s: %(message)s                                                                 _'
+    datefmt: '%d.%m %X'
+  standard_with_user_id_and_timestamp:
+    format: 'UID:%(user_id)s[%(asctime)s %(levelname)s] %(message)s'
+  standard_with_user_id_and_timestamp_and_lineno:
+    format: 'UID:%(user_id)s[%(asctime)s %(levelname)s]:%(name)s.%(funcName)s.line#%(lineno)d: %(message)s'
+  standard_lineno:
+    format: '[%(levelname)s]:%(name)s.%(funcName)s.line#%(lineno)d: %(message)s'
+  short_formatter:
+    format: '%(message)s'
+  default_formatter:
+    format: '[%(levelname)s]:%(name)s.%(pathname)s: %(message)s'
+handlers:
+  default_handler:
+    formatter: standard_lineno
+    class: logging.StreamHandler
+    stream: ext://sys.stdout  # Default is stderr
+    level: DEBUG
+  cons_handler_with_timestamp:
+    filters: [HttpMsgPassingFilter, HttpMsgBlockingFilter]
+    formatter: standard_with_timestamp
+    class: logging.StreamHandler
+    stream: ext://sys.stdout  # Default is stderr
+    level: ERROR
+  file_handler_with_timestamp:
+    filters: [HttpMsgPassingFilter, HttpMsgBlockingFilter]
+    formatter: standard_with_user_id_and_timestamp
+    class: logging.FileHandler
+    filename: cfg://GENERAL_LOG # ustawiane w definitions.py -> log_config.py
+    mode: a
+    level: ERROR
+  cons_handler_lineno:
+    formatter: standard_with_user_id_and_timestamp_and_lineno
+    class: logging.StreamHandler
+    stream: ext://sys.stdout  # Default is stderrdefinitions.py ->
+    level: ERROR
+  file_handler_lineno:
+    formatter: standard_with_user_id_and_timestamp_and_lineno
+    class: logging.FileHandler
+    filename: cfg://GENERAL_LOG # ustawiane w  log_config.py
+    mode: a
+    level: ERROR
+  file_handler_plain:
+    formatter: short_formatter
+    class: logging.FileHandler
+    filename: cfg://ASR_TEXT_LOG # ustawiane w definitions.py -> log_config.py
+    mode: a
+    level: ERROR
+  eniam_logfile_handler:
+    formatter: standard_with_user_id_and_timestamp_and_lineno
+    class: logging.FileHandler
+    filename: cfg://ENIAM_LOG # ustawiane w log_config.py
+    mode: a
+    level: ERROR
+filters:
+    HttpMsgPassingFilter:
+        '()': manage.HttpMsgFilter
+        'allow': True  
+        'pattern_list': ['.* /czatbot/.*']
+    HttpMsgBlockingFilter:
+        '()': manage.HttpMsgFilter
+        'allow': False  # False = block
+        'pattern_list': [ # add messages to list to be filtered out from logging
+                        # '"GET ',
+                        # 'Invalid HTTP_HOST header',
+                        '"GET /czatbot/ HTTP/1.1" 200 50',
+                        # '"GET / HTTP/1.1" 200 0',
+                        # 'Bad Request: /'
+                       ]
+loggers:
+  '':
+    handlers: [cons_handler_with_timestamp, file_handler_with_timestamp]
+    level: ERROR
+    propagate: False
+  django.server:
+    level: ERROR
+    propagate: True  # True -> ROOT handler ('') 

@@ -1,0 +1,14 @@
+mock
+freezegun==0.3.11
+python-dateutil
+xlrd
+requests
+# flask==1.0.2
+pymessenger2==3.1.0  # bug in bot.py, line 68, should be "payload['notification_type'] = notification_type.value"
+pyOpenSSL==18.0.0
+pyyaml==3.13
+nose
+simpleeval
+nested-lookup
+python-benedict
+anytree

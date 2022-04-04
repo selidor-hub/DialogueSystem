@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Rozmowa z botem</h1>
+	{% if previous_dialog %}
+	<p>
+		{% for line in previous_dialog %}
+			{{ line }}<br>
+		{% endfor %}
+	</p>
+	{% endif %}
+	<form action="" method="post">
+		{% csrf_token %}
+		<!-- <table> -->
+		<!-- {{ form.as_table }} -->
+		<!-- </table> -->
+		<p>{{ form }}<input type="submit" value="Prześlij"></p>
+	</form>
+	{% if previous_dialog %}
+	<form action="{% url 'reset' %}" method="post">
+		<p>{{ reset_form }}<input type="submit" value="Od nowa"></p>
+	</form>
+	{% endif %}
+{% endblock %}

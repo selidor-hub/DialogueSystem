@@ -1,0 +1,130 @@
+#  Dialog Manager
+#  Copyright (C) 2022 SELIDOR - T. Puza, Ł. Wasilewski Sp.J.
+#
+#  This library is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This library is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+---
+commands:
+
+- id: 1
+  conditions:
+  - aim('KnowAction')
+  actions:
+  - send_hello()
+  - hello_world()
+
+- id: 2
+  conditions:
+  - eniam_parsed_as('{"command":"od nowa"}')
+  actions:
+  - reset()
+  - reset_msg()
+  - hello_world()
+
+- id: 3
+  conditions:
+  - eniam_parsed_as('{"command":"pomoc"}')
+  actions:
+  - help()
+
+- id: 4
+  conditions:
+  - eniam_parsed_as('{"command":"start"}')
+  actions:
+  - reset()
+  - hello_world()
+
+- id: 9
+  conditions:
+  - eniam_parsed_contains_key('greetings')
+  - aim('KnowService')
+  actions:
+  - send_hello()
+
+- id: 5
+  conditions:
+  - aim('KnowService')
+  - aim_fulfilled()
+  actions:
+  - send_text('Będę szukał terminów dla usługi ' + get_representative_service_name() + '.')
+  - change_aim('HaveVisualizableHits')
+  - do_not_wait_for_response()
+
+- id: 15
+  conditions:
+  - aim('KnowService')
+  - eniam_parsed_as('{"confirmation":"tak"}')
+  actions:
+  - aim_select_first_proposed()
+  # - do_not_wait_for_response()
+
+- id: 6
+  conditions:
+  - aim('KnowChoice')
+  - eniam_parsed_as('{"confirmation":"tak"}')
+  actions:
+  - aim_select_first_proposed()
+  - do_not_wait_for_response()
+
+- id: 7
+  conditions:
+  - aim('KnowChoice')
+  - aim_fulfilled()
+  actions:
+  - send_text(convo_state.aim.generate_message())
+  - change_aim_to_next()
+
+- id: 14
+  conditions:
+  - aim('KnowService')
+  - eniam_parsed_as('{"action":{"name":"lista usług"}}')
+  actions:
+  - convo_state_list_services()
+
+- id: 11
+  conditions:
+  - aim('ConfirmReservation')
+  - eniam_parsed_as('{"confirmation":"tak"}')
+  actions:
+  - aim_parse_confirmation(0) # 0 means Confirm
+
+- id: 12
+  conditions:
+  - aim('ProcessConfirmation')
+  - eniam_parsed_as('{"confirmation":"nie"}')
+  actions:
+  - change_aim('EndConversation')
+
+- id: 13
+  conditions:
+  - aim('ProcessConfirmation')
+  - eniam_parsed_as('{"confirmation":"tak"}')
+  actions:
+  - aim_parse_if_confirmation(Yes)
+
+- id: 16
+  conditions:
+  - eniam_parsed_as('{"confirmation":"nie"}')
+  actions:
+  - convo_state_step_back()
+
+- id: 17
+  conditions:
+  - aim('EndConversation')
+  - eniam_parsed_as('{"confirmation":"tak"}')
+  actions:
+  - reset()
+  - reset_msg()
+  - hello_world()
+

@@ -1,0 +1,32 @@
+{
+  "attributes": [
+    "days",
+    "minutes",
+    "hours",
+    "weeks"
+  ],
+  "nieco": {
+    "minute": {},
+    "hour": {"minutes": 10},
+    "time_of_day": {},
+    "week_day": {"days": 1},
+    "month_day": {"days": 1},
+    "year_day": {"days": 1},
+    "week": {},
+    "month": {},
+    "year": {},
+    "academic_year": {}
+  },
+  "trochę": {
+    "minute": {"minutes": 10},
+    "hour": {"minutes": 20},
+    "time_of_day": {},
+    "week_day": {"days": 1},
+    "month_day": {"days": 1},
+    "year_day": {"days": 1},
+    "week": {},
+    "month": {},
+    "year": {},
+    "academic_year": {}
+  }
+}

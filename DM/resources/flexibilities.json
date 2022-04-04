@@ -1,0 +1,30 @@
+{
+  "prefer": {
+    "najlepiej": 2,
+    "najchętniej": 3,
+    "chętnie": 2
+  },
+  "and": [
+    "tylko",
+    "jednak",
+    "wyłącznie"
+  ],
+  "or": [
+    "jeszcze",
+    "również"
+  ],
+  "any": [
+    "każdy",
+    "którykolwiek",
+    "dowolny",
+    "obojętny",
+    "jakiś",
+    "któryś",
+    "wszystek",
+    "jakikolwiek"
+  ],
+  "no": [
+    "inny",
+    "żaden"
+  ]
+}
