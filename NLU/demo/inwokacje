@@ -1,0 +1,11 @@
+
+cd ~/Dokumenty/Selidor/DialogueSystem/NLU/lexemes
+subsyntax -m -p 9759 -a --def-cat -u base -u beauty -u fixed -e aux -e time -e numbers
+eniam --port 9759 -p 9760 --no-disamb -u base -u beauty -u fixed -e aux -e time -e numbers --partial -j
+
+cd ~/Dokumenty/Selidor/DialogueSystem/NLU/grounding
+./service_grounder -p 9761
+./category_grounder -p 9762 -c ../../corpus/examples/tabela_parsed.json
+./time_grounder -p 9763
+
+./time_demo

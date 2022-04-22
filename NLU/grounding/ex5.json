@@ -1,0 +1,11 @@
+{
+"text": "chciałabym umówić się na nogi",
+"patient": {
+  "part": "noga",
+  "person": "client"},
+"client-data": {
+  "gender": "f"},
+"action": {
+  "attitude": "chcieć",
+  "name": "zarezerwować"}}
+

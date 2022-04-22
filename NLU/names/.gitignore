@@ -1,0 +1,10 @@
+*.a
+*.cmi
+*.cma
+*.cmo
+*.cmx
+*.cmxa
+*.o
+import
+name_parser
+results/*

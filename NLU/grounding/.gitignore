@@ -1,0 +1,13 @@
+*.a
+*.cmi
+*.cma
+*.cmo
+*.cmx
+*.cmxa
+*.o
+beauty_loader
+service_grounder
+corpus_analyzer
+category_grounder
+time_grounder
+results/*

@@ -1,0 +1,4 @@
+{"categories": ["Masaż klasyczny - każdy rodzaj", "Masaż", "Masaż klasyczny - całe ciało", "Masaż klasyczny - plecy"], 
+"query": {"service": {"name": "masaż", "param": "klasyczny"}, "patient": {"part": "plecy"}, "doer": {}}}
+
+

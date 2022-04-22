@@ -1,0 +1,9 @@
+{"categories": ["Strzyżenie męskie ogólne","Strzyżenie męskie - włosy długie"],
+"query": {
+  "service": {
+    "name": "strzyc",
+    "param": {
+      "and": [
+        "męski",
+        "ogólny"]}}}}
+

@@ -1,0 +1,12 @@
+{"now": "2021-12-25 17:45:00", "horizon": 100,"query": {
+"text": "piątek między 15 a 17",
+"time": {
+  "and": [
+    {
+      "weekday": 5},
+    {
+          "begin": {
+            "hour": 15},
+          "end": {
+            "hour": 17}}]}}}
+

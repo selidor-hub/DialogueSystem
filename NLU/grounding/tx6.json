@@ -1,0 +1,2 @@
+{"now": "2022-02-25 10:51:50", "query": {"time": {"and": [{"and": [{"monthday": 19, "weekday": 5}, {"hour": 18}]}, {"hour": 18}]}}, "horizon": 365}
+

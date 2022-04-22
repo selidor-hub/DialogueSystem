@@ -1,3 +1,6 @@
-# DialogueSystem
+# W poszczególne katalogi repozytorium zawierają wyniki realizacji naslępujących zadań projektu:
 
-test2
+- ASR - Zadanie 3: Utworzenie systemu rozpoznawania mowy 
+- NLU - Zadanie 4: Analiza rozumienia języka mówionego 
+- DM - Zadanie 5: Opracowanie managera dialogu 
+

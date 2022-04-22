@@ -1,0 +1,7 @@
+cd ~/Dokumenty/Selidor/DialogueSystem/NLU/telephones
+
+subsyntax -m -p 1234 -a --def-cat -e numbers -e telephones
+eniam --port 1234 --no-disamb --line-mode -e numbers -e telephones --no-sem
+eniam --port 1234 --no-disamb -v 2 -e numbers -e telephones --partial -t
+eniam --port 1234 --no-disamb --line-mode -e numbers -e telephones --partial -j
+

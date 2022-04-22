@@ -1,0 +1,101 @@
+accuracy  best    sel100
+LatPP 0.931790
+StdPP 0.934911
+accuracy  best2   sel100
+LatPP 0.935569
+StdPP 0.935569
+accuracy  lat     sel100
+            10       20       30       40
+LatPP 0.894210 0.889709 0.889187 0.889680
+StdPP 0.883011 0.878805 0.868479 0.866252
+accuracy  oracle  sel100
+LatPP 0.918632
+StdPP 0.921752
+accuracy  oracle2 sel100
+LatPP 0.924631
+StdPP 0.924631
+
+accuracy  best    sel95
+LatPP 0.606516
+StdPP 0.605234
+accuracy  best2   sel95
+LatPP 0.604540
+StdPP 0.604540
+accuracy  lat     sel95
+            10       20       30       40
+LatPP 0.605869 0.608772 0.605002 0.610363
+StdPP 0.591573 0.595121 0.576358 0.576330
+accuracy  oracle  sel95
+LatPP 0.682315
+StdPP 0.681033
+accuracy  oracle2 sel95
+LatPP 0.696140
+StdPP 0.696140
+
+precision best    sel100
+LatPP 0.949901
+StdPP 0.952282
+precision best2   sel100
+LatPP 0.963631
+StdPP 0.963631
+precision lat     sel100
+            10       20       30       40
+LatPP 0.925503 0.925888 0.926660 0.927355
+StdPP 0.899273 0.897684 0.890326 0.888548
+precision oracle  sel100
+LatPP 0.949533
+StdPP 0.951941
+precision oracle2 sel100
+LatPP 0.967254
+StdPP 0.967254
+
+precision best    sel95
+LatPP 0.727798
+StdPP 0.726503
+precision best2   sel95
+LatPP 0.730525
+StdPP 0.730525
+precision lat     sel95
+            10       20       30       40
+LatPP 0.711795 0.722601 0.720676 0.726745
+StdPP 0.668925 0.682601 0.668969 0.668322
+precision oracle  sel95
+LatPP 0.782692
+StdPP 0.781372
+precision oracle2 sel95
+LatPP 0.802357
+StdPP 0.802357
+
+recall    best    sel100
+LatPP 0.960317
+StdPP 0.962862
+recall    best2   sel100
+LatPP 0.950076
+StdPP 0.950076
+recall    lat     sel100
+            10       20       30       40
+LatPP 0.935023 0.930711 0.929703 0.930142
+StdPP 0.943402 0.942620 0.935244 0.933981
+recall    oracle  sel100
+LatPP 0.943079
+StdPP 0.945624
+recall    oracle2 sel100
+LatPP 0.933558
+StdPP 0.933558
+
+recall    best    sel95
+LatPP 0.727441
+StdPP 0.727441
+recall    best2   sel95
+LatPP 0.706058
+StdPP 0.706058
+recall    lat     sel95
+            10       20       30       40
+LatPP 0.723248 0.721817 0.719375 0.723953
+StdPP 0.723263 0.725867 0.712139 0.713512
+recall    oracle  sel95
+LatPP 0.762186
+StdPP 0.762186
+recall    oracle2 sel95
+LatPP 0.753945
+StdPP 0.753945

@@ -1,0 +1,14 @@
+@CAT_NAMES
+
+@ROLE_NAMES
+ 
+ first-name last-name profession part e-mail telephone gender
+ animal artefact name param attitude type
+ minute hour monthday weekday month year
+ town quarter street street-name house-number postal-code
+ client-data time action organization doer patient service location price rating
+ 
+@OPERATORS
+
+@RULES
+

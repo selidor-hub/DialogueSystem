@@ -1,0 +1,11 @@
+*.a
+*.cmi
+*.cma
+*.cmo
+*.cmx
+*.cmxa
+*.o
+czytacz
+czytacz2
+czytacz3
+results/*

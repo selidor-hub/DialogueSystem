@@ -1,0 +1,28 @@
+export ENIAM_USER_DATA_PATH=../lexemes/data
+cat ../../ASR/lats/tdnnf_mixed_grammar_2/lats_L2a_Marta/L2a__95.0.lat.fst.txt | ./kratoczyt
+
+screen
+export ENIAM_USER_DATA_PATH=../lexemes/data
+./kratoczyt -p 3333 >/dev/null
+
+cat ../../ASR/lats/tdnnf_mixed_grammar_2/lats_L2a_Marta/L2a__95.0.lat.fst.txt | netcat localhost 3333
+
+#restartowanie serwisu na 192.168.6.8
+sudo systemctl stop kratoczyt
+sudo systemctl start kratoczyt
+
+sudo systemctl status kratoczyt
+
+
+systemctl daemon-reload
+
+#przetwarzanie korpusu
+cd ~/Dokumenty/Selidor/DialogueSystem/NLU/lexemes
+eniam --debug -p 9760 -a --def-cat --no-disamb -u base -u beauty -u fixed -e aux -e time -e numbers --partial -j
+
+cd ~/Dokumenty/Selidor/DialogueSystem/NLU/lexemes
+subsyntax -m -p 9759 -a --def-cat -u base -u beauty -u fixed -e aux -e time -e numbers
+eniam --port 9759 -p 9760 --no-disamb -u base -u beauty -u fixed -e aux -e time -e numbers --partial -j
+
+
+./kratoczyt -c x

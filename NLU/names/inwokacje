@@ -1,0 +1,5 @@
+cat ../../corpus/examples/dialogi3_klient_name.tab  | ./name_parser --line-mode
+
+https://dane.gov.pl/pl/dataset/1681,nazwiska-osob-zyjacych-wystepujace-w-rejestrze-pesel
+
+#second-name , nazwiska łączone kreską
